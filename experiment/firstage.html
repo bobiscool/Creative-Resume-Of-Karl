@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-2.1.1.min.js"></script>
+    <link href="jquery-ui.min.css">
+    <script src="jquery-ui.min.js"></script>
+
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+       #About li {
+            list-style: none;
+            margin-top: 5vh;
+        }
+
+        .LIfont {
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        .line {
+            width: 1000px;
+            height: 2px;
+            background: black;
+        }
+
+        #Dadi-page {
+            position: absolute;
+            width: 4000px;
+            left: 0px;
+            top: 200px;
+            height: 800px;
+        }
+
+        #About-title {
+            position: absolute;
+            width: 1000px;
+            left: 0px;
+            top: 0;
+            margin-left: 100px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        #About-title li {
+            float: left;
+            margin-left: 100px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        #About {
+            position: absolute;
+            width: 1000px;
+            left: 0px;
+            top: 100px;
+            height: 200px;
+            z-index: 102;
+        }
+
+        #plants {
+            position: absolute;
+            left: 220px;
+            top: 56vh;
+        }
+
+        #plants img {
+            position: absolute;
+            z-index: 104;
+        }
+
+        .rotateMill1 {
+            -webkit-animation: plants 2.5s linear infinite;
+            -moz-animation: plants 2.5s linear infinite;
+            animation: plants 2.5s linear infinite;
+        }
+
+        .rotateMill2 {
+            -webkit-animation: plants 1.5s linear infinite;
+            -moz-animation: plants 1.5s linear infinite;
+            animation: plants 1.5s linear infinite;
+        }
+
+
+        .rotateMill3 {
+            -webkit-animation: plants 1.2s linear infinite;
+            -moz-animation: plants 1.2s linear infinite;
+            animation: plants 1.2s linear infinite;
+        }
+
+
+        .rotateMill4 {
+            -webkit-animation: plants 0.8s linear infinite;
+            -moz-animation: plants 0.8s linear infinite;
+            animation: plants 0.8s linear infinite;
+        }
+
+        @-ms-keyframes plants {
+            from {
+                -ms-transform: rotate(0deg);
+            } to {
+                  -ms-transform: rotate(360deg);
+              }
+        }
+        @-moz-keyframes plants {
+            from {
+                -moz-transform: rotate(0deg);
+            } to {
+                  -moz-transform: rotate(360deg);
+              }
+        }
+        @-webkit-keyframes plants {
+            from {
+                -webkit-transform: rotate(0deg);
+            } to {
+                  -webkit-transform: rotate(360deg);
+              }
+        }
+        @keyframes plants {
+            from {
+                transform: rotate(0deg);
+            } to {
+                  transform: rotate(360deg);
+              }
+        }
+
+
+        #Code-mill {
+            left: 20px;
+        }
+
+        #Design-mill {
+            left: 203px;
+        }
+
+        #Animation-mill {
+            left: 437px;
+        }
+
+        #Exercise-mill {
+            left: 690px;
+        }
+
+        .mill-pole {
+            position: absolute;
+            width: 10px;
+            bottom: -10vh;
+            background: #22242C;
+            z-index: 103;
+
+        }
+
+
+
+        #mill-pole1 {
+            height: 10vh;
+            left: 92px;
+        }
+
+        #mill-pole2 {
+            height: 10vh;
+            left: 273px;
+        }
+
+        #mill-pole3 {
+            height: 10vh;
+            left: 514px;
+        }
+
+        #mill-pole4 {
+            height: 10vh;
+            left: 762px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+                    console.log('a');
+                    $('#Code-mill').animate({'top': '-30vh'}, 1500, 'linear').addClass('rotateMill1');
+                    $('#Design-mill').animate({'top': '-16vh'}, 1500, 'linear').addClass('rotateMill2');
+                    $('#Animation-mill').animate({'top': '-30vh'}, 1500, 'linear').addClass('rotateMill3');
+                    $('#Exercise-mill').animate({'top': '-44vh'}, 1500, 'linear').addClass('rotateMill4');
+                    $('#mill-pole1').animate({'height': '26vh'}, 1500, 'linear');
+                    $('#mill-pole2').animate({'height': '15vh'}, 1500, 'linear');
+                    $('#mill-pole3').animate({'height': '26vh'}, 1500, 'linear');
+                    $('#mill-pole4').animate({'height': '43vh'}, 1500, 'linear');
+
+                }
+        )
+
+
+    </script>
+</head>
+<body>
+<div id="Dadi-page">
+        <ul id="About-title">
+            <li>CODE</li>
+            <li>DESIGN</li>
+            <li>ANIMATION</li>
+            <li>EXERCISE</li>
+        </ul>
+        <ul id="About">
+            <li class="LIfont">PROFICIENT</li>
+            <li class="line"></li>
+            <li class="LIfont">FAMILAR</li>
+            <li class="line"></li>
+            <li class="LIfont">BEGINNER</li>
+            <li class="line"></li>
+        </ul>
+        <div id="plants">
+
+            <img id="Code-mill" src="../img/dataDEMO/windomill.png">
+            <div id="mill-pole1" class="mill-pole"></div>
+            <img id="Design-mill" src="../img/dataDEMO/windomill.png">
+            <div id="mill-pole2" class="mill-pole"></div>
+            <img id="Animation-mill" src="../img/dataDEMO/windomill.png">
+            <div id="mill-pole3" class="mill-pole"></div>
+            <img id="Exercise-mill" src="../img/dataDEMO/windomill.png">
+            <div id="mill-pole4" class="mill-pole"></div>
+        </div>
+
+</div>
+</body>
+</html>

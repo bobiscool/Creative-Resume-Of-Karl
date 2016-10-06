@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-2.1.1.min.js"></script>
+    <script>
+        window.onload=function(){
+            /**
+             * 自制了一个帧动画js调用对象
+             * @param id     获取对象
+             * @param urlF   url前缀
+             * @param urlE   url后缀
+             * @param num    图片的张数
+             * @param settime   动画运行快慢
+             * @param Callback  当动画完成后 是否有回调? 回调的话就 停止当前动画  继续下一个  如果没有 就进行循环动画
+             * @param backnumber    动画第一遍 可能有一个初始化动画  在后面循环的时候可能就没用了
+             *          比如火箭发射 初始有一个或图案由小变大的过程
+             * @constructor
+             */
+            function C_actor(id,urlF,urlE,num,settime,Callback,backnumber,startnumber) {
+                this.Object=document.getElementById(id);
+                this.urlF = urlF;
+                this.urlE = urlE;
+                this.num = num;
+                this.setTime = settime;
+                this.callback = Callback;
+                this.backnumber = backnumber;
+                this.start = startnumber;
+                //this.prototype.startAnimation(urlF,urlE,num,settime)
+            }
+
+            C_actor.prototype.startAnimation =function () {
+                var i= this.start;
+                var  that =this;
+                that.timer=setInterval(function(){
+                   i++;
+                   that.Object.src = that.urlF +i+that.urlE;
+                   // console.log()
+                   //如果有回调函数那在动画完了之后 关闭动画  开始回调函数
+                       if(i>=that.num){
+
+                           if(that.callback) {
+                               clearInterval(that.timer);
+                               that.callback();
+                           }else {
+                               if(that.backnumber){
+                                   i=that.backnumber;
+                               }else{
+                                   i=0;
+                               }
+                           }
+                   }
+
+               },that.setTime)
+            };
+
+            var O_sky = document.getElementById('flight')
+
+
+            $('#fire1').animate({'opacity':1,'top':834},1000,'linear',function () {
+
+            });
+            $('.fireFlame').animate({'opacity':1,'top':820},1000,'linear',function () {
+                clearInterval(fire2.timer);
+                clearInterval(fire3.timer);
+               fire3.startAnimation();
+               fire2.startAnimation();
+               fire1.startAnimation();
+            });
+            setTimeout(
+                    function(){$('.fireFlame').animate({'opacity':0},1000,'linear',function(){
+                        clearInterval(fire2.timer);
+                        clearInterval(fire3.timer);
+                        $('#rocket2').animate({'top':1200/*,'left':-190,'height':'-=910px','width':'-=370px'*/},10000,'easeInQuart');
+                            }
+                    );
+
+
+            },12000);
+
+
+            setTimeout(
+                    function(){$('#fire1').animate({'opacity':0,top:700},1000,'linear',function(){
+                        clearInterval(fire1.timer);
+                                $('#rocket1').animate({'top':1200/*,'left':-190,'height':'-=910px','width':'-=254px'*/},10000,'easeInQuart');
+                                $('#air-plane').css({'transform':'rotate(75 deg)'});
+                            }
+                    )
+
+                    },32000);
+
+            var n = 1;
+              O_sky.timer = setInterval(function(){
+                n-=0.01;
+                O_sky.style.bottom = n*100+'%';
+                if(n<=-22.23){
+                    clearInterval(O_sky.timer)
+                    $('#sky5').vidbg({
+                        'mp4': 'earth.mp4',
+                        'webm': 'earth.webm',
+                    }, {
+                        // Options
+                        muted: true,
+                        loop: true,
+                        overlay: true,
+                    });
+                }
+            },20);
+
+            var fire1 = new C_actor('fire1','../img/rocket/fire1/fire1-','.png',48,20,'','',0);
+
+            var fire2 = new C_actor('fire2','../img/rocket/fire2/fire2-','.png',15,120,function () {
+                clearInterval(fire2.timer);
+                fire2_2.startAnimation();
+            },'',0);
+            var fire2_2 = new C_actor('fire2','../img/rocket/fire2/fire2-','.png',27,100,'',15,15);
+            var fire3 = new C_actor('fire3','../img/rocket/fire2/fire2-','.png',15,120,function () {
+                clearInterval(fire3.timer);
+                fire3_2.startAnimation();
+            },'',0);
+            var fire3_2 = new C_actor('fire3','../img/rocket/fire2/fire2-','.png',27,100,'',15,15);
+
+
+        }
+    </script>
+
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="jquery-ui.min.css"></script>
+    <script src="vidbg.js"></script>
+    <style>
+        .airTransation {
+            -webkit-transition: all 120s;
+            -moz-transition: all 120s;
+            -ms-transition: all 120s;
+            -o-transition:all 120s;
+            transition: all 120s;
+        }
+
+
+        #rocket {
+            position: absolute;
+            /* width: 100px; */
+            left: 250px;
+            transform: scale(0.7);
+            /* margin: 0px auto; */
+            top: 200px;
+            display: block;
+            z-index: 107;
+           }
+
+        #air-plane {
+
+            position:absolute;
+            left:0;
+            top:0;
+            z-index:107;
+        }
+
+        #rocket1 {
+            position: absolute;
+            left: 99px;
+            top: -160px;
+            z-index: 106;
+        }
+
+        #rocket2 {
+            position: absolute;
+            left: 40px;
+            top: -75px;
+            z-index: 104;
+        }
+
+        #fire1{
+            position: absolute;
+            left: 9px;
+            /* bottom: 0; */
+            top: 750px;
+            /*opacity: 0;*/
+            transform: rotate(-90deg);
+            z-index: 104;
+        }
+        .fireFlame {
+            position: absolute;
+            /* left: 239px; */
+            /* bottom: 0; */
+            max-width: 229px;
+            top: 800px;
+            z-index: 103;
+            /*opacity: 0;*/
+            transform: rotate(180deg);
+        }
+        #fire2{
+            left: 240px;
+        }
+
+        #fire3{
+            left: -21px;
+        }
+
+
+        /*天空 与 火箭合并   */
+
+          #div {
+              margin:0;
+              padding:0;
+          }
+        #flight {
+            position: absolute;
+            left: 0;
+            bottom: 100%;
+            width: 100%;
+
+            -webkit-transition: all 0.1s;
+            -moz-transition: all 0.1s;
+            -ms-transition: all 0.1s;
+            -o-transition:all 0.1s;
+            transition: all 0.1s;
+        }
+
+        .skyALL {
+            width: 100%;
+            height: 5000px;
+            position: relative;
+            left:0;
+            top:0;
+            /*border: 1px solid black;*/
+        }
+
+        #sky0 {
+            background: -moz-linear-gradient(top, #ffffff 0% , #99DCBD 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff),  color-stop(100%, #99DCBD));
+            background: -webkit-linear-gradient(top, #ffffff 0%, #99DCBD 100%);
+            background: -o-linear-gradient(top, #ffffff 0%, #99DCBD 100%);
+            background: -ms-linear-gradient(top, #ffffff 0%,#99DCBD 100%);
+            background: linear-gradient(to bottom, #ffffff 0%,#99DCBD 100%);
+
+        }
+
+
+        #sky1 {
+            background: -moz-linear-gradient(top,#39A3CE 0% ,#ffffff  100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #39A3CE),  color-stop(100%, #ffffff));
+            background: -webkit-linear-gradient(top, #39A3CE 0%, #ffffff 100%);
+            background: -o-linear-gradient(top, #39A3CE 0%, #ffffff 100%);
+            background: -ms-linear-gradient(top, #39A3CE 0%,#ffffff 100%);
+            background: linear-gradient(to bottom, #39A3CE 0%,#ffffff 100%);
+
+        }
+
+
+        #sky2 {
+            background: -moz-linear-gradient(top, #1F518E 0% , #004584 10%,#D5E4E9 25%,#39A3CE 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1F518E), color-stop(10% #004584 ),color-stop(25% #D5E4E9), color-stop(100%, #39A3CE ));  background: -webkit-linear-gradient(top, #1F518E 0%,#004584 10%,#D5E4E9 25%,#39A3CE 100%);
+            background: -o-linear-gradient(top, #1F518E 0%,#004584 10%,#D5E4E9 25%, #39A3CE  100%);
+            background: -ms-linear-gradient(top, #1F518E 0%,#004584 10%,#D5E4E9 25%, #39A3CE 100%);
+            background: linear-gradient(to bottom, #1F518E 0%,#004584 10%,#D5E4E9 25%, #39A3CE 100%)
+
+
+        }
+
+
+
+
+
+        #sky3 {
+            background: -moz-linear-gradient(top, #080707 0% , #1F518E 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #080707),  color-stop(100%, #1F518E ));
+            background: -webkit-linear-gradient(top, #080707 0%, #1F518E  100%);
+            background: -o-linear-gradient(top, #080707 0%, #1F518E  100%);
+            background: -ms-linear-gradient(top, #080707 0%, #1F518E 100%);
+            background: linear-gradient(to bottom, #080707 0%, #1F518E 100%);
+        }
+
+
+        #sky5 {
+            background-color: #080707;
+            height:1080px;
+        }
+
+
+        #clouds1 {
+            position: absolute;
+            bottom: 0;
+            margin:0;
+            max-width: 100%;
+
+        }
+
+    </style>
+</head>
+<body>
+
+
+<div id="flight">
+    <!--开始是火箭上升  然后脱节云层部分拖一级   然后是黑色部分  有星星     然后飞往 太空 之前  脱节     然后就是横向漂移 - 显现地球 月来呢-->
+    <!--分开做吧  先是  加星星  再脱节 动画 -->
+    <!--<div id="sky11" class="skyALL"></div>-->
+    <!--<div id="sky10" class="skyALL"></div>-->
+    <!--<div id="sky9" class="skyALL"></div>-->
+    <!--<div id="sky8" class="skyALL"></div>-->
+    <!--<div id="sky7" class="skyALL"></div>-->
+    <!--<div id="sky6" class="skyALL"></div>-->
+    <div id="sky5" class="skyALL">
+
+    </div>
+
+    <div id="sky3" class="skyALL"></div>
+    <div id="sky2" class="skyALL">
+
+    </div>
+    <div id="sky1" class="skyALL">
+        <img id="clouds1" src="../img/rocket/clounds.png">
+    </div>
+    <div id="sky0" class="skyALL"></div>
+</div>
+
+
+
+
+
+
+<div id="rocket">
+    <img id="air-plane" class="airTransation" src="../img/rocket/air.png">
+    <img  id="rocket1" src="../img/rocket/rocket1.png">
+    <img  id="rocket2"  src="../img/rocket/rocket2.png">
+    <img id="fire1" src="../img/rocket/fire1/fire1-0.png">
+    <img id="fire2" class="fireFlame" src="../img/rocket/fire2/fire2-0.png">
+    <img id="fire3" class="fireFlame" src="../img/rocket/fire2/fire2-0.png">
+</div>
+
+
+</body>
+</html>

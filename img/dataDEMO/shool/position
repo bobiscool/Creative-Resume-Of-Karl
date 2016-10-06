@@ -1,0 +1,93 @@
+     #building-A {
+            position: absolute;;
+            left:0;
+            bottom:0px;
+            z-index: 80;
+        }
+
+        #building-B {
+            position: absolute;;
+            left:0;
+            bottom:0px;
+            z-index: 85;
+        }
+        #building-C {
+            position: absolute;;
+            left: 97px;
+            bottom:0px;
+            z-index: 85;
+        }
+
+        #building-D {
+            position: absolute;;
+            left: 238px;
+            bottom: 5px;
+            z-index: 81;
+        }
+        #building-E {
+            position: absolute;;
+            /*left: 238px;*/
+            /*bottom: 5px;*/
+            left: 385px;
+            bottom: -1px;
+            z-index: 85;
+        }
+
+        #building-F {
+            position: absolute;;
+            left: 623px;
+            bottom: 0px;
+            z-index: 84;
+        }
+        #building-Q {
+            position: absolute;;
+            left: 392px;
+            bottom: 347px;
+            z-index: 79;
+        }
+        #building-R {
+            position: absolute;;
+            left: 564px;
+            bottom: 3px;
+            z-index: 81;
+        }
+
+        #building-H {
+            position: absolute;;
+            left: 4px;
+            bottom: 48px;
+            z-index: 85;
+        }
+        #building-I {
+            position: absolute;;
+            left: 7px;
+            bottom: 316px;
+            z-index: 85;
+        }
+
+        #building-J {
+            position: absolute;;
+            left: 625px;
+            bottom: 64px;
+            z-index: 85;
+        }
+
+        #building-K {
+            position: absolute;
+            left: 635px;
+            bottom: 160px;
+            z-index: 85;
+        }
+
+        #building-L {
+            position: absolute;
+            left: 306px;
+            bottom: 16px;
+            z-index: 85;
+        }
+        #building-M {
+            position: absolute;
+            left: 42px;
+            bottom: 16px;
+            z-index: 85;
+        }

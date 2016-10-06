@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+<script src="jquery-2.1.1.min.js"></script>
+    <script src="vidbg.js"></script>
+    <script>
+        jQuery(function($){
+            $('#sky5').vidbg({
+                'mp4': 'earth.mp4',
+                'webm': 'earth.webm',
+                'poster': 'media/fallback.jpg',
+            }, {
+                // Options
+                muted: true,
+                loop: true,
+                overlay: true,
+            });
+        });
+    </script>
+    <style>
+        #div {
+            margin:0;
+            padding:0;
+        }
+        #flight {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 5000px;
+        }
+
+        .skyALL {
+            width: 100%;
+            height: 5000px;
+            position: relative;
+            left:0;
+            top:0;
+            /*border: 1px solid black;*/
+        }
+
+        #sky0 {
+             background: -moz-linear-gradient(top, #ffffff 0% , #99DCBD 100%);
+             background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff),  color-stop(100%, #99DCBD));
+             background: -webkit-linear-gradient(top, #ffffff 0%, #99DCBD 100%);
+             background: -o-linear-gradient(top, #ffffff 0%, #99DCBD 100%);
+             background: -ms-linear-gradient(top, #ffffff 0%,#99DCBD 100%);
+             background: linear-gradient(to bottom, #ffffff 0%,#99DCBD 100%);
+
+         }
+
+
+        #sky1 {
+            background: -moz-linear-gradient(top,#39A3CE 0% ,#ffffff  100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #39A3CE),  color-stop(100%, #ffffff));
+            background: -webkit-linear-gradient(top, #39A3CE 0%, #ffffff 100%);
+            background: -o-linear-gradient(top, #39A3CE 0%, #ffffff 100%);
+            background: -ms-linear-gradient(top, #39A3CE 0%,#ffffff 100%);
+            background: linear-gradient(to bottom, #39A3CE 0%,#ffffff 100%);
+
+        }
+
+
+        #sky2 {
+            background: -moz-linear-gradient(top, #1F518E 0% , #004584 10%,#D5E4E9 25%,#39A3CE 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1F518E), color-stop(10% #004584 ),color-stop(25% #D5E4E9), color-stop(100%, #39A3CE ));  background: -webkit-linear-gradient(top, #1F518E 0%,#004584 10%,#D5E4E9 25%,#39A3CE 100%);
+            background: -o-linear-gradient(top, #1F518E 0%,#004584 10%,#D5E4E9 25%, #39A3CE  100%);
+            background: -ms-linear-gradient(top, #1F518E 0%,#004584 10%,#D5E4E9 25%, #39A3CE 100%);
+            background: linear-gradient(to bottom, #1F518E 0%,#004584 10%,#D5E4E9 25%, #39A3CE 100%)
+
+
+        }
+
+
+
+
+        #sky3 {
+            background: -moz-linear-gradient(top, #080707 0% , #1F518E 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #080707),  color-stop(100%, #1F518E ));
+            background: -webkit-linear-gradient(top, #080707 0%, #1F518E  100%);
+            background: -o-linear-gradient(top, #080707 0%, #1F518E  100%);
+            background: -ms-linear-gradient(top, #080707 0%, #1F518E 100%);
+            background: linear-gradient(to bottom, #080707 0%, #1F518E 100%);
+        }
+
+
+        #sky5 {
+            background-color: #080707;
+            height:1080px;
+        }
+
+
+        #clouds1 {
+            position: absolute;
+            bottom: 0;
+            margin:0;
+            max-width: 100%;
+
+        }
+    </style>
+</head>
+<body>
+<div id="flight">
+    <!--开始是火箭上升  然后脱节  脱节  然后飞往太空后  然后就是 - 显现地球 月来呢-->
+    <!--<div id="sky11" class="skyALL"></div>-->
+    <!--<div id="sky10" class="skyALL"></div>-->
+    <!--<div id="sky9" class="skyALL"></div>-->
+    <!--<div id="sky8" class="skyALL"></div>-->
+    <!--<div id="sky7" class="skyALL"></div>-->
+    <!--<div id="sky6" class="skyALL"></div>-->
+    <div id="sky5" class="skyALL">
+
+    </div>
+
+    <div id="sky3" class="skyALL"></div>
+    <div id="sky2" class="skyALL">
+
+    </div>
+    <div id="sky1" class="skyALL">
+        <img id="clouds1" src="../img/rocket/clounds.png">
+    </div>
+    <div id="sky0" class="skyALL"></div>
+</div>
+
+</body>
+</html>

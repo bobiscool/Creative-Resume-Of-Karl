@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <link href="jquery-ui.min.css">
+    <style>
+        #FishArea {
+            position: absolute;
+            width:3000px;
+            height:100%;
+        }
+        #Web-Software {
+            position: absolute;
+            width:1000px;
+            height:100%;
+        }
+        .Webtag {
+           position: relative;
+            width: 1000px;
+           margin-top: 2vh;
+            border: 1px solid;
+        }
+        .WebSoft {
+            position: relative;
+            top:-25px;
+        }
+
+        .Fish1 {
+            position: relative;
+            margin-left: 20px;
+            left:120%;
+            -webkit-transition: all 1s;
+            -moz-transition: all 1s;
+            -ms-transition: all 1s;
+            -o-transition: all 1s;
+            transition: all 1s;
+        }
+
+        .FishTitle {
+            position: relative;
+            margin-left: 20px;
+        }
+        .Fish2 {
+            position: relative;
+            margin-left: 76px;
+            left:120%;
+            -webkit-transition: all 1s;
+            -moz-transition: all 1s;
+            -ms-transition: all 1s;
+            -o-transition: all 1s;
+            transition: all 1s;
+        }
+
+        .Fish3 {
+            position: relative;
+            margin-left: 76px;
+            left:120%;
+            -webkit-transition: all 1s;
+            -moz-transition: all 1s;
+            -ms-transition: all 1s;
+            -o-transition: all 1s;
+            transition: all 1s;
+        }
+
+        .place-holder {
+            margin-left:20px;
+            display: inline-block;
+            position:relative;
+            width:155px;
+            height: 50px;
+        }
+
+
+
+        #Coding {
+            position: absolute;
+            left:1000px;
+            width:1000px;
+            height:100%;
+        }
+
+        #OtherCoding {
+            position: absolute;
+            left:2000px;
+            width:1000px;
+            height:100%;
+        }
+
+    </style>
+</head>
+<script>
+    var OA_Fish1 = document.getElementsByClassName('Fish1');
+
+    function C_fish(clas) {
+        this.object = document.getElementsByClassName(clas);
+    }
+
+    C_fish.prototype.Animate = function () {
+        var that = this;
+        var i=0;
+        that.timer = setInterval(function(){
+            if(i>that.object.length){
+                clearInterval(that.timer );
+                i=0;
+            }
+            that.object[i].style.left = '0';
+            i++;
+        },400)
+    }
+
+    var Fish1 = new C_fish('Fish1');
+    var Fish2 = new C_fish('Fish2');
+    var Fish3 = new C_fish('Fish3');
+
+    Fish1.Animate();
+    Fish2.Animate();
+</script>
+<body>
+
+
+<div id="FishArea">
+    <div id="Web-Software">
+        <div class="Webtag">
+            <div class="place-holder"></div>
+            <img class="FishTitle" src="../img/dataDEMO/fish/BEGAIN.png">
+            <img class="FishTitle" src="../img/dataDEMO/fish/FAMI.png">
+            <img class="FishTitle" src="../img/dataDEMO/fish/PRO.png">
+
+        </div>
+        <div  class="Webtag">
+
+            <img class="WebSoft" src="../img/dataDEMO/fish/PHO.png">
+            <img class="Fish1" src="../img/dataDEMO/fish/fish.gif">
+            <img class="Fish1" src="../img/dataDEMO/fish/fish.gif">
+        </div>
+        <div class="Webtag">
+            <img class="WebSoft" src="../img/dataDEMO/fish/Illu.png">
+            <img class="Fish1" src="../img/dataDEMO/fish/fish.gif">
+            <img class="Fish1" src="../img/dataDEMO/fish/fish.gif">
+        </div>
+        <div class="Webtag" >
+            <img class="WebSoft" src="../img/dataDEMO/fish/webs.png">
+            <img class="Fish1" src="../img/dataDEMO/fish/fish.gif">
+            <img class="Fish1" src="../img/dataDEMO/fish/fish.gif">
+            <img class="Fish1" src="../img/dataDEMO/fish/fish.gif">
+        </div>
+        <div class="Webtag" >
+            <img class="WebSoft" src="../img/dataDEMO/fish/phy.png">
+            <img class="Fish1" src="../img/dataDEMO/fish/fish.gif">
+            <img class="Fish1" src="../img/dataDEMO/fish/fish.gif">
+        </div>
+    </div>
+    <div id="Coding">
+        <div class="Webtag">
+            <div class="place-holder"></div>
+            <img class="FishTitle" src="../img/dataDEMO/fish/BEGAIN.png">
+            <img class="FishTitle" src="../img/dataDEMO/fish/FAMI.png">
+            <img class="FishTitle" src="../img/dataDEMO/fish/PRO.png">
+
+        </div>
+        <div  class="Webtag">
+
+            <img class="WebSoft" src="../img/dataDEMO/fish/HTML.png">
+            <img class="Fish2" src="../img/dataDEMO/fish/fish2.gif">
+            <img class="Fish2" src="../img/dataDEMO/fish/fish2.gif">
+        </div>
+        <div class="Webtag">
+            <img class="WebSoft" src="../img/dataDEMO/fish/CSS.png">
+            <img class="Fish2" src="../img/dataDEMO/fish/fish2.gif">
+            <img class="Fish2" src="../img/dataDEMO/fish/fish2.gif">
+        </div>
+        <div class="Webtag" >
+            <img class="WebSoft" src="../img/dataDEMO/fish/JAVASCRIPT.png">
+            <img class="Fish2" src="../img/dataDEMO/fish/fish2.gif">
+            <img class="Fish2" src="../img/dataDEMO/fish/fish2.gif">
+            <img class="Fish2" src="../img/dataDEMO/fish/fish2.gif">
+        </div>
+        <div class="Webtag" >
+            <img class="WebSoft" src="../img/dataDEMO/fish/PYTHON.png">
+            <img class="Fish2" src="../img/dataDEMO/fish/fish2.gif">
+            <img class="Fish2" src="../img/dataDEMO/fish/fish2.gif">
+        </div>
+    </div>
+
+    <div id="OtherCoding">
+        <div class="Webtag">
+            <div class="place-holder"></div>
+            <img class="FishTitle" src="../img/dataDEMO/fish/BEGAIN.png">
+            <img class="FishTitle" src="../img/dataDEMO/fish/FAMI.png">
+            <img class="FishTitle" src="../img/dataDEMO/fish/PRO.png">
+
+        </div>
+        <div  class="Webtag">
+
+            <img class="WebSoft" src="../img/dataDEMO/fish/GITHUB.png">
+            <img class="Fish3" src="../img/dataDEMO/fish/jelly.gif">
+            <img class="Fish3" src="../img/dataDEMO/fish/jelly.gif">
+        </div>
+        <div class="Webtag">
+            <img class="WebSoft" src="../img/dataDEMO/fish/JQ.png">
+            <img class="Fish3" src="../img/dataDEMO/fish/jelly.gif">
+            <img class="Fish3" src="../img/dataDEMO/fish/jelly.gif">
+        </div>
+        <div class="Webtag" >
+            <img class="WebSoft" src="../img/dataDEMO/fish/AJAX.png">
+            <img class="Fish3" src="../img/dataDEMO/fish/jelly.gif">
+            <img class="Fish3" src="../img/dataDEMO/fish/jelly.gif">
+            <img class="Fish3" src="../img/dataDEMO/fish/jelly.gif">
+        </div>
+        <div class="Webtag" >
+            <img class="WebSoft" src="../img/dataDEMO/fish/SCRAPY.png">
+            <img class="Fish3" src="../img/dataDEMO/fish/jelly.gif">
+            <img class="Fish3" src="../img/dataDEMO/fish/jelly.gif">
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

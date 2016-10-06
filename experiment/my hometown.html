@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <link href="jquery-ui.min.css">
+    <link href="../CSS/animate.css">
+    <script>
+        $(document).ready(function () {
+            $('#frame').animate({'bottom': '0'}, 1500, 'easeOutBounce', function
+                    () {
+                $('#panda').animate({'bottom': '80px'}, 1000, 'easeOutBounce', function () {
+                    $('#hat').animate({'bottom': '356px'}, 700, 'easeOutBounce');
+                });
+            });
+            $('#bamboo').animate({'opacity': 1}, 7000, 'linear');
+            $('#text').animate({'opacity': 1}, 7000, 'linear');
+        });
+    </script>
+    <style>
+        #chengdu {
+            position: absolute;
+            left: 0px;
+            top: 100px;
+            width: 1500px;
+            height: 80%;
+            bottom: 0;
+        }
+
+        #frame {
+            position: absolute;
+            left: 0;
+            bottom: 120%;
+            width: 1000px;
+            height: 100%;
+        }
+
+        #frame-IMG {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            max-width: 855px;
+            z-index: 99;
+        }
+
+        #hat {
+            position: absolute;
+            left: 59px;
+            bottom: 970px;
+            z-index: 102;
+        }
+
+        #hat-IMG {
+
+            position: absolute;
+            max-width: 126px;
+            z-index: 99;
+        }
+
+        #bamboo {
+            position: absolute;
+            left: 90px;
+            bottom: 83px;
+            z-index: 102;
+            opacity: 0;
+
+        }
+
+        #bamboo-IMG {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            max-width: 648px;
+        }
+
+        #text {
+            position: absolute;
+            left: 23px;
+            bottom: 187px;
+            opacity: 0;
+            z-index: 102;
+        }
+
+        #text-IMG {
+            position: absolute;
+            left: 50px;
+            bottom: 330px;
+            max-width: 204.75px;
+
+        }
+
+        #panda {
+            position: absolute;
+            left: 468px;
+            bottom: 980px;
+            z-index: 103;
+
+        }
+
+        #panda-body {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 101;
+
+        }
+
+        #panda-body-IMG {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            max-width: 242.25px;
+
+        }
+
+        #hand-r {
+            position: absolute;
+            left: 13px;
+            bottom: 107px;
+            z-index: 99;
+        }
+
+        #hand-r-IMG {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            max-width: 51.75px;
+
+            -webkit-animation: ear-r 1s linear infinite;
+            -o-animation: ear-r 1s linear infinite;
+            animation: ear-r 1s linear infinite;
+        }
+
+        #ear-r {
+            position: absolute;
+            left: 68px;
+            bottom: 271px;
+            z-index: 99;
+
+        }
+
+        #ear-r-IMG {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            max-width: 24px;
+            -webkit-animation: ear-r 0.8s linear infinite;
+            -o-animation: ear-r 0.8s linear infinite;
+            animation: ear-r 0.8s linear infinite;
+        }
+
+        #ear-l {
+            position: absolute;
+            left: 174px;
+            bottom: 273px;
+            z-index: 99;
+
+        }
+
+        #ear-l-IMG {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            max-width: 32.25px;
+            -webkit-animation: ear-l 1s linear infinite;
+            -o-animation: ear-l 1s linear infinite;
+            animation: ear-l 1s linear infinite;
+        }
+
+        @-moz-keyframes ear-l {
+            0% {
+                transform: rotate(-1deg);
+                -moz-transform-origin: 0% 100%;
+
+                animation-timing-function: ease-in-out;
+            }
+
+            15% {
+                transform: rotate(-3deg);
+                -moz-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            25% {
+                transform: rotate(-5deg);
+                -moz-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            35% {
+                transform: rotate(-7deg);
+                -moz-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            50% {
+                transform: rotate(-10deg);
+                -moz-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            65% {
+                transform: rotate(-7deg);
+                -moz-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            75% {
+                transform: rotate(-5deg);
+                -moz-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            85% {
+                transform: rotate(-3deg);
+                -moz-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            100% {
+                transform: rotate(-1deg);
+                -moz-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+        }
+
+        @-ms-keyframes ear-l {
+            0% {
+                transform: rotate(-1deg);
+                -ms-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            15% {
+                transform: rotate(-3deg);
+                -ms-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            25% {
+                transform: rotate(-5deg);
+                -ms-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            35% {
+                transform: rotate(-7deg);
+                -ms-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            50% {
+                transform: rotate(-10deg);
+                -ms-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            65% {
+                transform: rotate(-7deg);
+                -ms-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            75% {
+                transform: rotate(-5deg);
+                -ms-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            85% {
+                transform: rotate(-3deg);
+                -ms-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            100% {
+                transform: rotate(-1deg);
+                -ms-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+        }
+
+        @-webkit-keyframes ear-l {
+            0% {
+                transform: rotate(-1deg);
+                -webkit-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            15% {
+                transform: rotate(-3deg);
+                -webkit-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            25% {
+                transform: rotate(-5deg);
+                -webkit-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            35% {
+                transform: rotate(-7deg);
+                -webkit-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            50% {
+                transform: rotate(-10deg);
+                -webkit-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            65% {
+                transform: rotate(-7deg);
+                -webkit-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            75% {
+                transform: rotate(-5deg);
+                -webkit-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            85% {
+                transform: rotate(-3deg);
+                -webkit-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            100% {
+                transform: rotate(-1deg);
+                -webkit-transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+        }
+
+        @keyframes ear-l {
+            0% {
+                transform: rotate(-1deg);
+                transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            15% {
+                transform: rotate(-3deg);
+                transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            25% {
+                transform: rotate(-5deg);
+                transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            35% {
+                transform: rotate(-7deg);
+                transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            50% {
+                transform: rotate(-10deg);
+                transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            65% {
+                transform: rotate(-7deg);
+                transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            75% {
+                transform: rotate(-5deg);
+                transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            85% {
+                transform: rotate(-3deg);
+                transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            100% {
+                transform: rotate(-1deg);
+                transform-origin: 0% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+        }
+
+        @-moz-keyframes ear-r {
+            0% {
+                transform: rotate(-1deg);
+                -moz-transform-origin: 100% 100%;
+
+                animation-timing-function: ease-in-out;
+            }
+
+            15% {
+                transform: rotate(2deg);
+                -moz-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            25% {
+                transform: rotate(4deg);
+                -moz-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            35% {
+                transform: rotate(6deg);
+                -moz-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            50% {
+                transform: rotate(9deg);
+                -moz-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            65% {
+                transform: rotate(6deg);
+                -moz-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            75% {
+                transform: rotate(4deg);
+                -moz-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            85% {
+                transform: rotate(2deg);
+                -moz-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            100% {
+                transform: rotate(-1deg);
+                -moz-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+        }
+
+        @-ms-keyframes ear-r {
+            0% {
+                transform: rotate(-1deg);
+                -ms-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            15% {
+                transform: rotate(2deg);
+                -ms-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            25% {
+                transform: rotate(4deg);
+                -ms-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            35% {
+                transform: rotate(6deg);
+                -ms-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            50% {
+                transform: rotate(9deg);
+                -ms-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            65% {
+                transform: rotate(6deg);
+                -ms-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            75% {
+                transform: rotate(4deg);
+                -ms-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            85% {
+                transform: rotate(2deg);
+                -ms-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            100% {
+                transform: rotate(-1deg);
+                -ms-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+        }
+
+        @-webkit-keyframes ear-r {
+            0% {
+                transform: rotate(-1deg);
+                -webkit-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            15% {
+                transform: rotate(2deg);
+                -webkit-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            25% {
+                transform: rotate(4deg);
+                -webkit-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            35% {
+                transform: rotate(6deg);
+                -webkit-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            50% {
+                transform: rotate(9deg);
+                -webkit-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            65% {
+                transform: rotate(6deg);
+                -webkit-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            75% {
+                transform: rotate(4deg);
+                -webkit-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            85% {
+                transform: rotate(2deg);
+                -webkit-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            100% {
+                transform: rotate(-1deg);
+                -webkit-transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+        }
+
+        @keyframes ear-r {
+            0% {
+                transform: rotate(-1deg);
+                transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            15% {
+                transform: rotate(2deg);
+                transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            25% {
+                transform: rotate(4deg);
+                transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            35% {
+                transform: rotate(6deg);
+                transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            50% {
+                transform: rotate(9deg);
+                transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            65% {
+                transform: rotate(6deg);
+                transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            75% {
+                transform: rotate(4deg);
+                transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            85% {
+                transform: rotate(2deg);
+                transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+            100% {
+                transform: rotate(-1deg);
+                transform-origin: 100% 100%;
+                animation-timing-function: ease-in-out;
+            }
+
+        }
+
+        /*相框出现动画*/
+
+
+    </style>
+</head>
+<body>
+<div id="chengdu">
+    <div id="frame">
+        <img id="frame-IMG" src="../img/dataDEMO/frame.png">
+        <div id="bamboo">
+            <img id="bamboo-IMG" src="../img/dataDEMO/bamboo.png">
+        </div>
+        <div id="text">
+            <img id="text-IMG" src="../img/dataDEMO/chengdu.png">
+
+        </div>
+        <div id="panda">
+            <div id="hat">
+                <img id="hat-IMG" src="../img/dataDEMO/hat.png">
+
+            </div>
+            <div id="panda-body">
+                <img id="panda-body-IMG" src="../img/dataDEMO/pandabody.png">
+            </div>
+            <div id="hand-r">
+                <img id="hand-r-IMG" src="../img/dataDEMO/hand-r.png">
+            </div>
+            <div id="ear-r">
+
+                <img id="ear-r-IMG" src="../img/dataDEMO/ear-r.png">
+            </div>
+            <div id="ear-l">
+                <img id="ear-l-IMG" src="../img/dataDEMO/ear-l.png">
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
