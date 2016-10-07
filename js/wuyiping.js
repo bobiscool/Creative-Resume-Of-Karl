@@ -29,6 +29,7 @@ O_Sea.Onoff = false;
 var O_steel = document.getElementById('layer-dock');
 var O_rocketAudio = document.getElementById('rocketAudio');
 O_steel.Onoff=true;
+var O_Baiduyun = document.getElementById('Baiduyun');
 var walksteps = 0;
 var onoff = false;
 var OT_karlswimAnimation = null;
@@ -38,6 +39,7 @@ var O_csky5 = document.getElementById('sky5');
 var O_about = document.getElementById('About');
 var O_chengdu = document.getElementById('chengdu');
 var O_school = document.getElementById('school-Ob');
+var O_car1 = document.getElementById('Car1');
 O_about.Onoff = true;
 O_csky5.Onoff = false;
 var n = 1;
@@ -216,6 +218,7 @@ function walkstyle3(ev) {
         if(!O_steel.Onoff){
             clearInterval( OT_karlswimAnimation);
             $(O_karl).stop();
+            O_meetCar1.meet();//判断 百度云
             document.removeEventListener('keyup',F_floatdown);
             F_removeKeyListener(walkstyle3,walkstyle4,walkstyle4,function () {
                 F_shuChangeback2();
@@ -415,6 +418,7 @@ function swimTOwalk(){
 
                     O_rocket.Onoff=true;
                 }
+
             },20)
 
         }
@@ -533,13 +537,38 @@ C_actor.prototype.startAnimation =function () {
                 if(that.backnumber){
                     i=that.backnumber;
                 }else{
-                    i=0;
+                    clearInterval(that.timer);
                 }
             }
         }
 
     },that.setTime)
 };
+
+var O_meetCar1 = new F_crashActor('layer-dock',function(){
+        Baiduyun_Ani();
+
+});
+
+var O_Car1Img = new C_actor('Car1Img','Car1Img Kache_',74,50,'','',0);
+
+
+
+
+
+
+
+
+
+function Baiduyun_Ani() {
+    O_Car1Img.startAnimation();
+    $('#Car1Img').animate({'left':'0'},3500,'linear');
+    $(O_Baiduyun).animate({'left':179},3500,'linear',function () {
+        $(O_Baiduyun).animate({'bottom': 0, 'left': '160'}, 1000, 'linear');
+        $(O_Baiduyun).css({'transform': 'rotate(-90deg)'});
+    });
+}
+
 
 
 
@@ -820,6 +849,10 @@ function F_stationeryHide() {
     $('#yuangui').css({'right':'-10%','transform':'rotate(0)'});
     $('#pencil').css({'right':'-10%','transform':'rotate(0)'});
     $('#upan').css({'left':'-10%','transform':'rotate(0)'});
+    setTimeout(function(){
+        $('#stationery').hide();
+        },100
+    );
 }
 
 
@@ -843,3 +876,4 @@ function F_flyhelmet() {
     $('#bachelor').animate({'left':0,
         'top': '-1300%' ,'opacity':0},2000,'linear');
 }
+
