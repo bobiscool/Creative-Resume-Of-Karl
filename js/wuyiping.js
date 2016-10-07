@@ -43,6 +43,8 @@ var O_car1 = document.getElementById('Car1');
 O_about.Onoff = true;
 O_csky5.Onoff = false;
 var n = 1;
+var O_Car1Imgsrc = new Image();
+//O_Car1Imgsrc.src = '../img/dataDEMO/construction/Car.png';
 //记录当前 创口里面HEAD层真实的位置   用于适配 所有屏幕用的
 window.onresize = positionReset;  //添加 窗口改变时 改变人物位置
 
@@ -545,13 +547,12 @@ C_actor.prototype.startAnimation =function () {
     },that.setTime)
 };
 
-var O_meetCar1 = new F_crashActor('layer-dock',function(){
+var O_meetCar1 = new F_crashActor('Car1',function(){
         Baiduyun_Ani();
-
 });
 
-var O_Car1Img = new C_actor('Car1Img','Car1Img Kache_',74,50,'','',0);
-
+var O_Car1Img = new C_actor('Car1Img','Car1Img Kache_',24,100,'','',0);
+// O_Car1Img.Object.style.backgroundImage = O_Car1Imgsrc;
 
 
 
@@ -561,12 +562,18 @@ var O_Car1Img = new C_actor('Car1Img','Car1Img Kache_',74,50,'','',0);
 
 
 function Baiduyun_Ani() {
-    O_Car1Img.startAnimation();
-    $('#Car1Img').animate({'left':'0'},3500,'linear');
-    $(O_Baiduyun).animate({'left':179},3500,'linear',function () {
-        $(O_Baiduyun).animate({'bottom': 0, 'left': '160'}, 1000, 'linear');
-        $(O_Baiduyun).css({'transform': 'rotate(-90deg)'});
+    $('#Car1Img').animate({'left':'100'},1000,'linear',function(){
+        $('#Fandou').css({'transform':'rotate(-30deg)'});
+
+        $('#FandouTanhuang').css({'transform':'rotate(60deg)'});
+
+
+        $('#Baiduyun').css({'transform':'rotate(-90deg)'}).animate({'bottom':0,'left':'-60'},{'duration':500,'queue':false},'linear');;
+        $('#Baiduyun')
     });
+    $('#Baiduyun').animate({'left':'48px'},1000,'linear');
+
+    $('.Luntai').css({'transform':'rotate(-360deg)'});
 }
 
 

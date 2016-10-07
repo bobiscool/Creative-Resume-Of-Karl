@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,html {
+            width:100%;
+            height:100%;
+            margin:0;
+            padding:0;
+        }
+
+
+        #Car1 {
+            position: absolute;
+            bottom:20%;
+            z-index: 3;
+            /*background-color: #2FCEFF;*/
+        }
+
+        #Car1Img {
+            position: absolute;
+            bottom:0;
+            width:750px;
+            height:700px;
+            left:1000px;
+            z-index: 3;
+        }
+
+        #CarBody {
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            z-index: 3;
+        }
+
+        #Fandou {
+            position: absolute;
+            left: -122px;
+            bottom: 156px;
+            transform-origin:30% 100%;
+            -webkit-transition: transform 0.6s linear;
+            -moz-transition: transform 0.6s linear;
+            -ms-transition: transform 0.6s linear;
+            -o-transition: transform 0.6s linear;
+            transition: transform 0.6s linear;
+            z-index: 2;
+        }
+
+
+        #FandouTanhuang {
+            position: absolute;
+            left: 90px;
+            bottom: 135px;
+            transform-origin:100% 100%;
+            -webkit-transition: transform 0.6s linear;
+            -moz-transition: transform 0.6s linear;
+            -ms-transition: transform 0.6s linear;
+            -o-transition: transform 0.6s linear;
+            transition: transform 0.6s linear;
+            z-index: 1;
+        }
+
+
+
+        #Baiduyun {
+            position: absolute;
+            background: url("../img/dataDEMO/construction/cloud2.png");
+            width: 330px;
+            height: 313px;
+            left: 948px;
+            bottom: 180px;
+            transform-origin:0 100%;
+            -webkit-transition: transform 0.6s linear;
+            -moz-transition: transform 0.6s linear;
+            -ms-transition: transform 0.6s linear;
+            -o-transition: transform 0.6s linear;
+            transition: transform 0.6s linear;
+            z-index: 1;
+        }
+
+        .Luntai {
+            transform-origin:50% 50%;
+            -webkit-transition: transform 3s linear;
+            -moz-transition: transform 3s linear;
+            -ms-transition: transform 3s linear;
+            -o-transition: transform 3s linear;
+            transition: transform 3s linear;
+            z-index: 3;
+        }
+
+
+        #Luntai {
+            position: absolute;
+            left: 10px;
+            bottom: 0;
+            
+        }
+
+
+
+        #Luntai1 {
+            position: absolute;
+            left: 180px;
+            bottom: 0;
+        }
+
+
+        #Luntai2 {
+            position: absolute;
+            left: 454px;
+            bottom: 0;
+        }
+
+
+
+
+    </style>
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <link href="jquery-ui.min.css">
+    <script>
+        $(document).ready(function()
+        {
+            $('#Car1Img').animate({'left':'100'},3000,'linear',function(){
+                $('#Fandou').css({'transform':'rotate(-30deg)'});
+
+                $('#FandouTanhuang').css({'transform':'rotate(60deg)'});
+
+
+                $('#Baiduyun').css({'transform':'rotate(-90deg)'}).animate({'bottom':0,'left':'-60'},{'duration':500,'queue':false},'linear');;
+                $('#Baiduyun')
+            });
+            $('#Baiduyun').animate({'left':'48px'},3000,'linear');
+
+            $('.Luntai').css({'transform':'rotate(-360deg)'});
+        })
+
+    </script>
+</head>
+<body>
+<!--这个动画可以以一中改变类名的形式 来展示 -->
+<div id="Car1">
+    <div id="Car1Img" class="">
+        <img id="CarBody" src="../img/dataDEMO/construction/CarBody.png">
+        <img id="Fandou" src="../img/dataDEMO/construction/fandou.png">
+        <img id="FandouTanhuang" src="../img/dataDEMO/construction/CarTanhuang.png">
+        <img id="Luntai" class="Luntai" src="../img/dataDEMO/construction/luntai.png">
+        <img id="Luntai1"  class="Luntai" src="../img/dataDEMO/construction/luntai.png">
+        <img id="Luntai2" class="Luntai" src="../img/dataDEMO/construction/luntai.png">
+
+    </div>
+    <div id="Baiduyun">
+    </div>
+</div>
+
+
+</body>
+</html>

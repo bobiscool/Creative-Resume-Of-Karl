@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5e3b9c9-397f-4a87-8c38-f443520f972d" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/dataDEMO/construction/Car.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/Karl's.css" afterPath="$PROJECT_DIR$/CSS/Karl's.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/Car.html" afterPath="$PROJECT_DIR$/experiment/Car.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/wuyiping.js" afterPath="$PROJECT_DIR$/js/wuyiping.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/思路.md" afterPath="$PROJECT_DIR$/思路.md" />
     </list>
     <ignored path="wuyipinginteractiveresume.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +30,7 @@
     <favorites_list name="wuyipinginteractiveresume" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.7533235">
+    <splitter split-orientation="vertical" split-proportion="0.45790252">
       <split-first>
         <splitter split-orientation="horizontal" split-proportion="0.45738396">
           <split-first>
@@ -35,8 +38,8 @@
               <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/index.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="294">
-                      <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                    <state relative-caret-position="107">
+                      <caret line="383" column="84" selection-start-line="383" selection-start-column="84" selection-end-line="383" selection-end-column="84" />
                       <folding>
                         <element signature="n#div#2;n#div#0;n#div#2;n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                         <element signature="n#div#3;n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -49,6 +52,7 @@
                         <element signature="n#div#12;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                         <element signature="n#style#0;n#text#1;n#g#0;n#g#0;n#svg#0;n#div#12;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                         <element signature="n#div#1;n#div#14;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                        <element signature="n#div#15;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                       </folding>
                     </state>
                   </provider>
@@ -58,8 +62,8 @@
                 <entry file="file://$PROJECT_DIR$/思路.md">
                   <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                     <state split_layout="SPLIT">
-                      <first_editor relative-caret-position="21">
-                        <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+                      <first_editor relative-caret-position="349">
+                        <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
                         <folding />
                       </first_editor>
                       <second_editor />
@@ -70,8 +74,18 @@
               <file leaf-file-name="Car.html" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/experiment/Car.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="4347">
-                      <caret line="130" column="12" selection-start-line="130" selection-start-column="12" selection-end-line="130" selection-end-column="12" />
+                    <state relative-caret-position="291">
+                      <caret line="88" column="15" selection-start-line="88" selection-start-column="15" selection-end-line="88" selection-end-column="78" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="CarDom.html" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/experiment/CarDom.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="538">
+                      <caret line="137" column="10" selection-start-line="125" selection-start-column="12" selection-end-line="137" selection-end-column="10" />
                       <folding />
                     </state>
                   </provider>
@@ -80,8 +94,8 @@
               <file leaf-file-name="robot.html" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/experiment/robot.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="470">
-                      <caret line="90" column="0" selection-start-line="81" selection-start-column="8" selection-end-line="90" selection-end-column="0" />
+                    <state relative-caret-position="853">
+                      <caret line="85" column="20" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
                       <folding />
                     </state>
                   </provider>
@@ -108,7 +122,7 @@
                 <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="6783">
-                      <caret line="326" column="19" selection-start-line="326" selection-start-column="19" selection-end-line="326" selection-end-column="19" />
+                      <caret line="328" column="19" selection-start-line="328" selection-start-column="19" selection-end-line="328" selection-end-column="19" />
                       <folding />
                     </state>
                   </provider>
@@ -117,8 +131,18 @@
               <file leaf-file-name="yujiazai.js" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/js/yujiazai.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="483">
+                    <state relative-caret-position="56">
                       <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="preLoadImg.js" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/js/preLoadImg.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="63">
+                      <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
@@ -135,6 +159,16 @@
                       <provider selected="true" editor-type-id="text-editor">
                         <state relative-caret-position="3263">
                           <caret line="643" column="18" selection-start-line="643" selection-start-column="18" selection-end-line="643" selection-end-column="18" />
+                          <folding />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file leaf-file-name="CarDom.html" pinned="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/experiment/CarDom.html">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="-126">
+                          <caret line="111" column="18" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
                           <folding />
                         </state>
                       </provider>
@@ -157,8 +191,12 @@
                   <file leaf-file-name="Karl's.css" pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/CSS/Karl's.css">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="11">
-                          <caret line="408" column="1" selection-start-line="408" selection-start-column="1" selection-end-line="408" selection-end-column="1" />
+                        <state relative-caret-position="212">
+                          <caret line="2859" column="32" selection-start-line="2859" selection-start-column="32" selection-end-line="2859" selection-end-column="32" />
+                          <caret line="2858" column="35" selection-start-line="2858" selection-start-column="35" selection-end-line="2858" selection-end-column="35" />
+                          <caret line="2860" column="31" selection-start-line="2860" selection-start-column="31" selection-end-line="2860" selection-end-column="31" />
+                          <caret line="2861" column="30" selection-start-line="2861" selection-start-column="30" selection-end-line="2861" selection-end-column="30" />
+                          <caret line="2862" column="27" selection-start-line="2862" selection-start-column="27" selection-end-line="2862" selection-end-column="27" />
                           <folding>
                             <element signature="e#38792#38872#0" expanded="false" />
                             <element signature="e#38885#39101#0" expanded="false" />
@@ -179,8 +217,8 @@
                   <file leaf-file-name="wuyiping.js" pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="11760">
-                          <caret line="589" column="0" selection-start-line="589" selection-start-column="0" selection-end-line="589" selection-end-column="0" />
+                        <state relative-caret-position="522">
+                          <caret line="596" column="0" selection-start-line="596" selection-start-column="0" selection-end-line="596" selection-end-column="0" />
                           <folding />
                         </state>
                       </provider>
@@ -189,8 +227,8 @@
                   <file leaf-file-name="fish.html" pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/experiment/fish.html">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="2373">
-                          <caret line="113" column="36" selection-start-line="113" selection-start-column="36" selection-end-line="113" selection-end-column="36" />
+                        <state relative-caret-position="-2541">
+                          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="35" />
                           <folding />
                         </state>
                       </provider>
@@ -233,10 +271,10 @@
               <file leaf-file-name="wuyiping.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="-23">
-                      <caret line="547" column="58" selection-start-line="547" selection-start-column="58" selection-end-line="547" selection-end-column="58" />
+                    <state relative-caret-position="153">
+                      <caret line="573" column="44" selection-start-line="573" selection-start-column="44" selection-end-line="573" selection-end-column="44" />
                       <folding>
-                        <element signature="e#16697#17681#0" expanded="false" />
+                        <element signature="e#17017#18001#0" expanded="false" />
                         <element signature="n#!!block;n#F_meettheAbout#0" expanded="false" />
                         <element signature="n#!!block;n#F_animateAbout#0" expanded="false" />
                         <element signature="n#!!block;n#F_meettheChengdu#0" expanded="false" />
@@ -267,7 +305,7 @@
                 <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="588">
-                      <caret line="479" column="36" selection-start-line="479" selection-start-column="36" selection-end-line="479" selection-end-column="36" />
+                      <caret line="481" column="36" selection-start-line="481" selection-start-column="36" selection-end-line="481" selection-end-column="36" />
                       <folding />
                     </state>
                   </provider>
@@ -282,6 +320,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -307,11 +346,13 @@
         <option value="$PROJECT_DIR$/experiment/robot.html" />
         <option value="$PROJECT_DIR$/experiment/robot2.html" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/思路.md" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/CSS/Karl's.css" />
-        <option value="$PROJECT_DIR$/js/wuyiping.js" />
+        <option value="$PROJECT_DIR$/js/preLoadImg.js" />
         <option value="$PROJECT_DIR$/experiment/Car.html" />
+        <option value="$PROJECT_DIR$/思路.md" />
+        <option value="$PROJECT_DIR$/experiment/CarDom.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/wuyiping.js" />
+        <option value="$PROJECT_DIR$/CSS/Karl's.css" />
       </list>
     </option>
   </component>
@@ -380,7 +421,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -518,12 +559,12 @@
       <workItem from="1473138657069" duration="115900000" />
       <workItem from="1473818952792" duration="63520000" />
       <workItem from="1475735922331" duration="1518000" />
-      <workItem from="1475738933745" duration="18516000" />
+      <workItem from="1475738933745" duration="29350000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="402046000" />
+    <option name="totallyTimeSpent" value="412880000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -583,34 +624,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CSS/Karl's.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="e#38792#38872#0" expanded="false" />
-            <element signature="e#38885#39101#0" expanded="false" />
-            <element signature="e#39110#39191#0" expanded="false" />
-            <element signature="e#39419#40696#0" expanded="false" />
-            <element signature="e#40698#41964#0" expanded="false" />
-            <element signature="e#41966#43272#0" expanded="false" />
-            <element signature="e#43274#44501#0" expanded="false" />
-            <element signature="e#44503#45790#0" expanded="false" />
-            <element signature="e#45792#47068#0" expanded="false" />
-            <element signature="e#47070#48386#0" expanded="false" />
-            <element signature="e#48388#49625#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1953">
-          <caret line="93" column="11" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/yujiazai.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -635,6 +648,7 @@
             <element signature="n#div#12;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#text#1;n#g#0;n#g#0;n#svg#0;n#div#12;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#div#14;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#15;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -691,6 +705,7 @@
             <element signature="n#div#12;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#text#1;n#g#0;n#g#0;n#svg#0;n#div#12;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#div#14;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#15;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -747,6 +762,7 @@
             <element signature="n#div#12;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#text#1;n#g#0;n#g#0;n#svg#0;n#div#12;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#div#14;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#15;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -843,22 +859,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/yujiazai.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiment/fish.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2373">
-          <caret line="113" column="36" selection-start-line="113" selection-start-column="36" selection-end-line="113" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/common.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -901,18 +901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment/myschool.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="310" column="10" selection-start-line="310" selection-start-column="10" selection-end-line="314" selection-end-column="39" />
-          <folding>
-            <element signature="e#17324#21298#0" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/experiment/rocket.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-391">
@@ -948,17 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/思路.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="21">
-            <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
@@ -967,10 +944,93 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/yujiazai.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/preLoadImg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/思路.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="349">
+            <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/fish.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2541">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/myschool.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="310" column="10" selection-start-line="310" selection-start-column="10" selection-end-line="314" selection-end-column="39" />
+          <folding>
+            <element signature="e#17324#21298#0" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/robot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="853">
+          <caret line="85" column="20" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/Car.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="88" column="15" selection-start-line="88" selection-start-column="15" selection-end-line="88" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/CarDom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="137" column="10" selection-start-line="125" selection-start-column="12" selection-end-line="137" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6783">
+          <caret line="328" column="19" selection-start-line="328" selection-start-column="19" selection-end-line="328" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CSS/Karl's.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="408" column="1" selection-start-line="408" selection-start-column="1" selection-end-line="408" selection-end-column="1" />
+        <state relative-caret-position="212">
+          <caret line="2859" column="32" selection-start-line="2859" selection-start-column="32" selection-end-line="2859" selection-end-column="32" />
+          <caret line="2858" column="35" selection-start-line="2858" selection-start-column="35" selection-end-line="2858" selection-end-column="35" />
+          <caret line="2860" column="31" selection-start-line="2860" selection-start-column="31" selection-end-line="2860" selection-end-column="31" />
+          <caret line="2861" column="30" selection-start-line="2861" selection-start-column="30" selection-end-line="2861" selection-end-column="30" />
+          <caret line="2862" column="27" selection-start-line="2862" selection-start-column="27" selection-end-line="2862" selection-end-column="27" />
           <folding>
             <element signature="e#38792#38872#0" expanded="false" />
             <element signature="e#38885#39101#0" expanded="false" />
@@ -987,34 +1047,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6783">
-          <caret line="326" column="19" selection-start-line="326" selection-start-column="19" selection-end-line="326" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiment/robot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="90" column="0" selection-start-line="81" selection-start-column="8" selection-end-line="90" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiment/Car.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4347">
-          <caret line="130" column="12" selection-start-line="130" selection-start-column="12" selection-end-line="130" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="107">
+          <caret line="383" column="84" selection-start-line="383" selection-start-column="84" selection-end-line="383" selection-end-column="84" />
           <folding>
             <element signature="n#div#2;n#div#0;n#div#2;n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1027,6 +1063,7 @@
             <element signature="n#div#12;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#text#1;n#g#0;n#g#0;n#svg#0;n#div#12;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#div#14;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#15;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
