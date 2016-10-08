@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <link href="jquery-ui.min.css">
+    <style>
+
+        #BigCarArea {
+            position: absolute;
+            bottom:20%;
+            width: 1200px;
+            height: 1000px;
+            z-index: 2;
+        }
+
+        #BigCar {
+            position:absolute;
+            left:-1200px;
+            bottom:0;
+            width:1200px;
+            height:328px;
+            -webkit-transition: left 3s;
+            -moz-transition: left 3s;
+            -ms-transition: left 3s;
+            -o-transition: left 3s;
+            transition: left 3s;
+            z-index: 2;
+        }
+        #BigCarImg {
+            position:absolute;
+            left: 0;
+            bottom: 22px;
+            z-index: 2;
+        }
+
+        .Luntai2 {
+            transform-origin:50% 50%;
+            -webkit-transition: transform 3s linear;
+            -moz-transition: transform 3s linear;
+            -ms-transition: transform 3s linear;
+            -o-transition: transform 3s linear;
+            transition: transform 3s linear;
+            z-index: 2;
+        }
+
+
+        #BigCarImgLuntai {
+            position: absolute;
+            left: 983px;
+            bottom: 0;
+        }
+        #BigCarImgLuntai2 {
+            position: absolute;
+            left: 233px;
+            bottom: 0;
+        }
+
+        #BigCarImgLuntai3 {
+            position: absolute;
+            left: 36px;
+            bottom: 0;
+        }
+
+
+        .DEMO {
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            z-index: 2;
+            display: inline-block;
+            margin: 20px;
+            -webkit-transition: all 1s;
+            -moz-transition: all 1s;
+            -ms-transition: all 1s;
+            -o-transition: all 1s;
+            transition: all 1s;
+        }
+        #Langan {
+            position: absolute;
+            left: 14px;
+            bottom: 153px;
+            z-index: 3;
+        }
+
+
+        #DEMO1 {
+            left: 590px;
+            bottom: 153px;
+        }
+
+        #DEMO2 {
+            left: 319px;
+            bottom: 153px;
+        }
+
+        #DEMO3 {
+            left: 35px;
+            bottom: 153px;
+        }
+        #DEMO1:hover,#DEMO2:hover,#DEMO3:hover{
+            bottom:233px;
+        }
+
+
+
+        .ch-item {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            cursor: default;
+            box-shadow:
+                    inset 0 0 0 16px rgba(255,255,255,0.6),
+                    0 1px 2px rgba(0,0,0,0.1);
+            transition: all 0.4s ease-in-out;
+        }
+
+        .ch-img-1 {
+            background-image: url(../img/../img/dataDEMO/construction/BigCar/kanfang.png);
+        }
+
+        .ch-img-2 {
+            background-image: url(../img/../img/dataDEMO/construction/BigCar/person.png);
+        }
+
+        .ch-img-3 {
+            background-image: url(../img/../img/dataDEMO/construction/BigCar/baiduCloud.png);
+        }
+
+
+        .ch-info {
+            position: absolute;
+            background: rgba(75, 166, 147, 0.6);
+            width: inherit;
+            height: inherit;
+            border-radius: 50%;
+            overflow: hidden;
+            opacity: 0;
+            transition: all 0.4s ease-in-out;
+            transform: scale(0);
+        }
+
+        .ch-info h3 {
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 22px;
+            margin: 0 30px;
+            padding: 45px 0 0 0;
+            height: 140px;
+            font-family: 'Open Sans', Arial, sans-serif;
+            text-shadow:
+                    0 0 1px #fff,
+                    0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .ch-info p {
+            color: #fff;
+            padding: 10px 10px;
+            font-style: italic;
+            margin: -40px 30px;
+            font-size: 12px;
+            border-top: 1px solid rgba(255,255,255,0.5);
+            opacity: 0;
+            transition: all 1.2s ease-in-out 0.4s;
+        }
+
+        .ch-info p a {
+            display: block;
+            color: rgba(255,255,255,0.7);
+            font-style: normal;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 9px;
+            letter-spacing: 1px;
+            padding-top: 4px;
+            font-family: 'Open Sans', Arial, sans-serif;
+        }
+
+        .ch-info p a:hover {
+            color: rgba(255,242,34, 0.8);
+        }
+
+
+
+        .ch-item:hover {
+            box-shadow:
+                    inset 0 0 0 1px rgba(255,255,255,0.1),
+                    0 1px 2px rgba(0,0,0,0.1);
+        }
+
+
+        .ch-item:hover .ch-info {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+
+        .ch-item:hover .ch-info p {
+            opacity: 1;
+        }
+
+
+
+
+    </style>
+<script>
+    $(document).ready(function(){
+       $('#BigCar').css({'left':0});
+        $('.Luntai2').css({'transform':'rotate(270deg)'});
+    });
+</script>
+</head>
+<body>
+<div id="BigCarArea">
+    <div id="BigCar">
+        <img id="BigCarImg" src="../img/dataDEMO/construction/BigCar/bigCarBody.png">
+        <img id="BigCarImgLuntai"  class="Luntai2" src="../img/dataDEMO/construction/BigCar/luntai.png">
+        <img id="BigCarImgLuntai2" class="Luntai2" src="../img/dataDEMO/construction/BigCar/luntai.png">
+        <img id="BigCarImgLuntai3" class="Luntai2" src="../img/dataDEMO/construction/BigCar/luntai.png">
+        <img id="Langan" src="../img/dataDEMO/construction/BigCar/langan.png">
+        <div id="DEMO1" class="DEMO">
+            <div class="ch-item ch-img-3">
+                <div class="ch-info">
+                    <h3>纯js <br>仿百度云<br>by Karl</h3>
+                    <p>JS + LESS  <a href="http://baiducloud.applinzi.com/">View on Sae</a></p>
+                </div>
+            </div>
+        </div>
+        <div id="DEMO2" class="DEMO">
+
+            <div class="ch-item ch-img-2">
+                <div class="ch-info">
+                    <h3>个人动态<br>HTML5简历 </h3>
+                    <p>DOM+JQ+Canvas <a href="http://karlresume.applinzi.com/">View on Sae</a></p>
+                </div>
+            </div>
+        </div>
+        <div id="DEMO3" class="DEMO">
+
+            <div class="ch-item ch-img-1">
+                <div class="ch-info">
+                    <h3>Karl看房<br>房产数据分析</h3>
+                    <p>Python爬虫+地图展示 <a href="http://kanfangkarl.applinzi.com/">View on Sae</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
