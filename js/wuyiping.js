@@ -453,16 +453,24 @@ function F_shuChangeback2(){
 }
 
 /*自制检测碰撞对象*/
-function F_crashActor(id,cal){
+function F_crashActor(id,cal,num){
     this.object = document.getElementById(id);
     this.Onoff = false;
+    this.num = num;
     this.callback = cal
 
 }
 
 F_crashActor.prototype.meet = function () {
     var that = this;
-    F_meettheWall(that.object,false,0);
+    var n = 0;
+    if(this.num){
+       n =this.num;
+    }else {
+        n =0 ;
+    }
+
+    F_meettheWall(that.object,false,n);
     that.timer = setInterval(function () {
         if(!that.object.Onoff){
             clearInterval(that.timer);
@@ -549,9 +557,16 @@ C_actor.prototype.startAnimation =function () {
 
 var O_meetCar1 = new F_crashActor('Car1',function(){
         Baiduyun_Ani();
+    O_meetBigCar.meet();
 });
 
-var O_Car1Img = new C_actor('Car1Img','Car1Img Kache_',24,100,'','',0);
+var O_meetBigCar = new F_crashActor('BigCarArea',function () {
+    setTimeout(function(){
+        BigCar_Ani();
+    },1000);
+
+});
+
 // O_Car1Img.Object.style.backgroundImage = O_Car1Imgsrc;
 
 
@@ -568,7 +583,7 @@ function Baiduyun_Ani() {
         $('#FandouTanhuang').css({'transform':'rotate(60deg)'});
 
 
-        $('#Baiduyun').css({'transform':'rotate(-90deg)'}).animate({'bottom':0,'left':'-60'},{'duration':500,'queue':false},'linear');;
+        $('#Baiduyun').css({'transform':'rotate(-90deg)'}).animate({'bottom':0,'left':'-60'},{'duration':500,'queue':false},'linear');
         $('#Baiduyun')
     });
     $('#Baiduyun').animate({'left':'48px'},1000,'linear');
@@ -577,6 +592,10 @@ function Baiduyun_Ani() {
 }
 
 
+function  BigCar_Ani() {
+    $('#BigCar').css({'left':0});
+    $('.Luntai2').css({'transform':'rotate(-270deg)'});
+}
 
 
 
