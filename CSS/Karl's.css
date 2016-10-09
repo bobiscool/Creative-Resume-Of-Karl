@@ -3086,3 +3086,76 @@ a {
     opacity: 1;
 }
 
+/*电视播放区*/
+#bigTvArea {
+    background:url('../img/dataDEMO/construction/TVshow/tvbody.png');
+    width: 720px;
+    height: 734px;
+    position:absolute;
+    left:14700px;
+    bottom:20%;
+}
+
+#displayArea {
+    width: 438px;
+    height: 340px;
+
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    position: absolute;
+    left: 82px;
+    bottom: 164px;
+
+}
+
+.dpa {
+    width: 100%;
+    height:100%;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
+#dpa1{
+    background: url("../img/dataDEMO/construction/TVshow/snowshakes.gif");
+    z-index:4;
+}
+
+#dpa2 {
+    background: #ffffff  url("../img/dataDEMO/construction/TVshow/movie6.gif") no-repeat;
+    z-index:3;
+}
+
+#dpa3 {
+    background: #000  url("../img/dataDEMO/construction/TVshow/movie4.gif") no-repeat;
+    background-position-Y: 2px;
+    z-index:2;
+}
+
+#dpa4 {
+    /*background: #ffffff  url("../img/dataDEMO/construction/TVshow/jobs.gif") no-repeat;*/
+    /*background-position-x: -40px;*/
+    z-index:1;
+}
+#TVbtn2 {
+    position: absolute;
+    left: 547px;
+    bottom: 240px;
+    transform-origin: 50% 50%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+#TVbtn1 {
+    position: absolute;
+    left: 540px;
+    bottom: 161px;
+}

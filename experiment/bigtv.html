@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <link href="jquery-ui.min.css">
+    <style>
+        #bigTvArea {
+            background:url('../img/dataDEMO/construction/TVshow/tvbody.png');
+            width: 720px;
+            height: 734px;
+            position:absolute;
+            /*left:14700px;*/
+            bottom:20%;
+        }
+
+        #displayArea {
+            width: 438px;
+            height: 340px;
+
+            -webkit-border-radius:10px;
+            -moz-border-radius:10px;
+            border-radius:10px;
+            position: absolute;
+            left: 82px;
+            bottom: 164px;
+
+        }
+
+        .dpa {
+            width: 100%;
+            height:100%;
+            -webkit-border-radius:10px;
+            -moz-border-radius:10px;
+            border-radius:10px;
+            position: absolute;
+            left: 0;
+            top:0;
+        }
+
+        #dpa1{
+            background: url("../img/dataDEMO/construction/TVshow/snowshakes.gif");
+            z-index:4;
+        }
+
+        #dpa2 {
+            background: #ffffff  url("../img/dataDEMO/construction/TVshow/movie6.gif") no-repeat;
+            z-index:3;
+        }
+
+        #dpa3 {
+            background: #000  url("../img/dataDEMO/construction/TVshow/movie4.gif") no-repeat;
+            background-position-Y: 2px;
+            z-index:2;
+        }
+
+        #dpa4 {
+            /*background: #ffffff  url("../img/dataDEMO/construction/TVshow/jobs.gif") no-repeat;*/
+            /*background-position-x: -40px;*/
+            z-index:1;
+        }
+        #TVbtn2 {
+            position: absolute;
+            left: 547px;
+            bottom: 240px;
+            transform-origin: 50% 50%;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+
+        #TVbtn1 {
+            position: absolute;
+            left: 540px;
+            bottom: 161px;
+        }
+
+    </style>
+    <script>
+        $(document).ready(function(){
+            var Movie4 = document.getElementById('dpa4');
+            setTimeout(function () {
+                $('#dpa1').hide();
+                $('#TVbtn2').css({'transform':'rotate(30deg)'})
+            },1000);
+
+            setTimeout(function () {
+                $('#dpa2').hide();
+                $('#TVbtn2').css({'transform':'rotate(60deg)'})
+            },2000);
+
+            setTimeout(function () {
+                $('#dpa3').hide();
+                $('#TVbtn2').css({'transform':'rotate(90deg)'})
+
+            },3000);
+
+            setTimeout(function () {
+                Movie4.style.background= 'url(../img/dataDEMO/construction/TVshow/jobs.gif) no-repeat';
+                Movie4.style.backgroundColor = '#fff';
+                Movie4.style.backgroundPositionX = '-40px';
+            },3000);
+
+
+
+        });
+    </script>
+</head>
+<body>
+<div id="bigTvArea">
+    <div id="displayArea">
+        <div id="dpa1" class="dpa"></div>
+        <div id="dpa2" class="dpa"></div>
+        <div id="dpa3" class="dpa"></div>
+        <div id="dpa4" class="dpa"></div>
+    </div>
+    <img id="TVbtn1" src="../img/dataDEMO/construction/TVshow/tvbutton.png">
+    <img id="TVbtn2" src="../img/dataDEMO/construction/TVshow/tvbutton2.png">
+
+</div>
+</body>
+</html>
