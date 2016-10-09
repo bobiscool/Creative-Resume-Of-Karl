@@ -565,6 +565,12 @@ var O_meetBigCar = new F_crashActor('BigCarArea',function () {
         BigCar_Ani();
     },1000);
 
+    O_meetTv.meet();
+
+});
+
+var O_meetTv = new F_crashActor('bigTvArea',function () {
+    TV_show();
 });
 
 // O_Car1Img.Object.style.backgroundImage = O_Car1Imgsrc;
@@ -577,6 +583,10 @@ var O_meetBigCar = new F_crashActor('BigCarArea',function () {
 
 
 function Baiduyun_Ani() {
+    F_removeKeyListener(walkstyle1, walkstyle2, walkstyle2);
+    setTimeout(function () {
+        F_addKeyListener(walkstyle1, walkstyle2, walkstyle2);
+    },2000);
     $('#Car1Img').animate({'left':'100'},1000,'linear',function(){
         $('#Fandou').css({'transform':'rotate(-30deg)'});
 
@@ -593,10 +603,39 @@ function Baiduyun_Ani() {
 
 
 function  BigCar_Ani() {
+    F_removeKeyListener(walkstyle1, walkstyle2, walkstyle2);
+    setTimeout(function () {
+        F_addKeyListener(walkstyle1, walkstyle2, walkstyle2);
+    },2000);
     $('#BigCar').css({'left':0});
     $('.Luntai2').css({'transform':'rotate(-270deg)'});
 }
+function TV_show() {
+    var Movie4 = document.getElementById('dpa4');
+    setTimeout(function () {
+        F_removeKeyListener(walkstyle1, walkstyle2, walkstyle2);
+        $('#dpa1').hide();
+        $('#TVbtn2').css({'transform':'rotate(30deg)'})
+    },1000);
 
+    setTimeout(function () {
+        $('#dpa2').hide();
+        $('#TVbtn2').css({'transform':'rotate(60deg)'})
+        F_addKeyListener(walkstyle1, walkstyle2, walkstyle2);
+    },2000);
+
+    setTimeout(function () {
+        $('#dpa3').hide();
+        $('#TVbtn2').css({'transform':'rotate(90deg)'})
+
+    },3000);
+
+    setTimeout(function () {
+        Movie4.style.background= 'url(./img/dataDEMO/construction/TVshow/jobs.gif) no-repeat';
+        Movie4.style.backgroundColor = '#fff';
+        Movie4.style.backgroundPositionX = '-40px';
+    },3000);
+}
 
 
 

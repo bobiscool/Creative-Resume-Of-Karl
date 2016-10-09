@@ -3092,8 +3092,9 @@ a {
     width: 720px;
     height: 734px;
     position:absolute;
-    left:14700px;
+    left:18900px;
     bottom:20%;
+    margin-bottom: -26px;
 }
 
 #displayArea {
