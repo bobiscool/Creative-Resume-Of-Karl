@@ -544,11 +544,12 @@ C_actor.prototype.startAnimation =function () {
                 clearInterval(that.timer);
                 that.callback();
             }else {
-                if(that.backnumber){
-                    i=that.backnumber;
-                }else{
-                    clearInterval(that.timer);
-                }
+                // if(that.backnumber){
+                //     i=that.backnumber;
+                // }else{
+                //     clearInterval(that.timer);
+                // }
+                i = that.start;
             }
         }
 
