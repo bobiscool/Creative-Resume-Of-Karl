@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d5e3b9c9-397f-4a87-8c38-f443520f972d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/Karl's.css" afterPath="$PROJECT_DIR$/CSS/Karl's.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/wuyiping.js" afterPath="$PROJECT_DIR$/js/wuyiping.js" />
     </list>
     <ignored path="wuyipinginteractiveresume.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -300,8 +297,8 @@
               <file leaf-file-name="wuyiping.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="62">
-                      <caret line="591" column="0" selection-start-line="591" selection-start-column="0" selection-end-line="591" selection-end-column="0" />
+                    <state relative-caret-position="83">
+                      <caret line="592" column="64" selection-start-line="592" selection-start-column="64" selection-end-line="592" selection-end-column="64" />
                       <folding>
                         <element signature="n#!!block;n#F_meettheWall#0" expanded="false" />
                         <element signature="n#!!block;n#swimTOwalk#0" expanded="false" />
@@ -686,16 +683,16 @@
       <workItem from="1473138657069" duration="115900000" />
       <workItem from="1473818952792" duration="63520000" />
       <workItem from="1475735922331" duration="1518000" />
-      <workItem from="1475738933745" duration="68173000" />
+      <workItem from="1475738933745" duration="68732000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="451703000" />
+    <option name="totallyTimeSpent" value="452262000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14446793" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -703,7 +700,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15785764" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18433735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18433735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -775,7 +772,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
           <caret line="55" column="11" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="11" />
-          <folding />
+          <folding>
+            <element signature="n#!!block;n#F_meettheWall#0" expanded="false" />
+            <element signature="n#!!block;n#swimTOwalk#0" expanded="false" />
+            <element signature="n#!!block;n#F_shuChangeback2#0" expanded="false" />
+            <element signature="n#!!block;n#F_crashActor#0" expanded="false" />
+            <element signature="e#13107#13437#0" expanded="false" />
+            <element signature="e#13572#13818#0" expanded="false" />
+            <element signature="e#14652#15226#0" expanded="false" />
+            <element signature="e#15280#15332#0" expanded="false" />
+            <element signature="e#15397#15485#0" expanded="false" />
+            <element signature="e#15545#15563#0" expanded="false" />
+            <element signature="n#!!block;n#F_rocketFly#0" expanded="false" />
+            <element signature="e#18572#19556#0" expanded="false" />
+            <element signature="n#!!block;n#F_animateAbout#0" expanded="false" />
+            <element signature="n#!!block;n#F_animateChengdu#0" expanded="false" />
+            <element signature="n#!!block;n#F_meettheSchool#0" expanded="false" />
+            <element signature="n#!!block;n#F_buildschool#0" expanded="false" />
+            <element signature="n#!!block;n#F_stationery#0" expanded="false" />
+            <element signature="n#!!block;n#F_stationeryHide#0" expanded="false" />
+            <element signature="n#!!block;n#F_animateBachelor#0" expanded="false" />
+            <element signature="n#!!block;n#F_flyhelmet#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1124,14 +1142,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6783">
-          <caret line="328" column="19" selection-start-line="328" selection-start-column="19" selection-end-line="328" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5">
@@ -1149,6 +1159,35 @@
             <element signature="n#style#0;n#text#1;n#g#0;n#g#0;n#svg#0;n#div#12;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#div#14;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#15;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="592" column="64" selection-start-line="592" selection-start-column="64" selection-end-line="592" selection-end-column="64" />
+          <folding>
+            <element signature="n#!!block;n#F_meettheWall#0" expanded="false" />
+            <element signature="n#!!block;n#swimTOwalk#0" expanded="false" />
+            <element signature="n#!!block;n#F_shuChangeback2#0" expanded="false" />
+            <element signature="n#!!block;n#F_crashActor#0" expanded="false" />
+            <element signature="e#13107#13437#0" expanded="false" />
+            <element signature="e#13572#13818#0" expanded="false" />
+            <element signature="e#14652#15226#0" expanded="false" />
+            <element signature="e#15280#15332#0" expanded="false" />
+            <element signature="e#15397#15485#0" expanded="false" />
+            <element signature="e#15545#15563#0" expanded="false" />
+            <element signature="n#!!block;n#F_rocketFly#0" expanded="false" />
+            <element signature="e#18572#19556#0" expanded="false" />
+            <element signature="n#!!block;n#F_animateAbout#0" expanded="false" />
+            <element signature="n#!!block;n#F_animateChengdu#0" expanded="false" />
+            <element signature="n#!!block;n#F_meettheSchool#0" expanded="false" />
+            <element signature="n#!!block;n#F_buildschool#0" expanded="false" />
+            <element signature="n#!!block;n#F_stationery#0" expanded="false" />
+            <element signature="n#!!block;n#F_stationeryHide#0" expanded="false" />
+            <element signature="n#!!block;n#F_animateBachelor#0" expanded="false" />
+            <element signature="n#!!block;n#F_flyhelmet#0" expanded="false" />
           </folding>
         </state>
       </provider>
