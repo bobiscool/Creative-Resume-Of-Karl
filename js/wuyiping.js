@@ -40,6 +40,19 @@ var O_about = document.getElementById('About');
 var O_chengdu = document.getElementById('chengdu');
 var O_school = document.getElementById('school-Ob');
 var O_car1 = document.getElementById('Car1');
+var O_Guangbiao = document.getElementById('Guangbiao');
+var words = [
+    '大家好 欢迎来到我的个人简历!',
+    '这是我的个人技能 自我测评',
+    '我来自"天府之国🐼"--成都,目前在 北京',
+    '我今年毕业于(SWUST)西南科技大学',
+    '这是我的技能表',
+    '我的在这里实习过',
+    '这里是我的部分作品,鼠标滑到上面,点击查看',
+    '注意看电视。。。',
+    '好了,准备好,我们要跳出地球了(有彩蛋)'
+];
+var iWord =document.getElementById('iWord');
 O_about.Onoff = true;
 O_csky5.Onoff = false;
 var n = 1;
@@ -326,6 +339,7 @@ var Fish3 = new C_fish('Fish3');
 
 var F_meet1 =new F_crashActor('Web-Software',function () {
     Fish1.Animate();
+    F_displayWords(words[4]);
     F_meet2.meet();
 });
 
@@ -558,12 +572,14 @@ C_actor.prototype.startAnimation =function () {
 
 var O_meetCar1 = new F_crashActor('Car1',function(){
         Baiduyun_Ani();
+    F_displayWords(words[5]);
     O_meetBigCar.meet();
 });
 
 var O_meetBigCar = new F_crashActor('BigCarArea',function () {
     setTimeout(function(){
         BigCar_Ani();
+        F_displayWords(words[6]);
     },1000);
 
     O_meetTv.meet();
@@ -571,6 +587,7 @@ var O_meetBigCar = new F_crashActor('BigCarArea',function () {
 });
 
 var O_meetTv = new F_crashActor('bigTvArea',function () {
+    F_displayWords(words[7]);
     TV_show();
 });
 
@@ -739,6 +756,7 @@ function F_meettheAbout(){
             if (!O_about.Onoff){
                 clearInterval(OT_meetAboutTimer);
                 clearInterval(O_about.timer);
+                F_displayWords(words[1]);
                 F_animateAbout();
                 F_meettheChengdu();
             }
@@ -773,6 +791,7 @@ function  F_meettheChengdu(){
             if (!O_chengdu.Onoff){
                 clearInterval(OT_meetChengduTimer);
                 clearInterval(O_about.timer);
+                F_displayWords(words[2]);
                 F_animateChengdu();
                 F_meettheSchool();
 
@@ -807,6 +826,7 @@ function  F_meettheSchool(){
         function(){
             if (!O_school.Onoff){
                 clearInterval(OT_meetschoolTimer);
+                F_displayWords(words[3]);
                 F_buildschool();
                 F_stationery();
                 F_animateBachelor();
@@ -943,3 +963,41 @@ function F_flyhelmet() {
         'top': '-1300%' ,'opacity':0},2000,'linear');
 }
 
+function F_displayWords(which) {
+    $('#displayword').css({'bottom':'-80%'});
+    iWord.innerHTML= '';
+    var index = 0;
+    var length = which.length;
+    var tId = null;
+    setInterval(function () {
+        toggleGBClass();
+    },500);
+
+    function start(){
+        iWord.innerHTML= '';
+
+        tId=setInterval(function(){
+            iWord.innerHTML +=which.charAt(index);
+            if(index++ === length){
+                clearInterval(tId);
+                setTimeout(function () {
+                    $('#displayword').css({'bottom':'-100%'});
+                },3000)
+            }
+
+        },100);
+    }
+
+
+
+
+    start();
+
+    function toggleGBClass() {
+        if(O_Guangbiao.className =='show'){
+            O_Guangbiao.className ='hide';
+        }else {
+            O_Guangbiao.className ='show';
+        }
+    }
+}

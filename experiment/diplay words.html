@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #displayword {
+            position: fixed;
+            bottom: -80%;
+            width:100%;
+            height: 100%;
+            margin:0;
+        }
+
+        #wordBckground {
+            position: absolute;
+            width:100%;
+            height: 100%;
+            background: #000000;
+            opacity:0.2;
+            margin:0;
+            z-index: 2;
+        }
+
+        #iWord {
+            display: inline;
+        }
+
+        #Guangbiao {
+
+        }
+
+        .hide {
+            opacity: 0;
+        }
+
+        .show {
+            opacity: 1;
+        }
+
+        #itextArea {
+            display: inline-block;
+            color: #4b4c4e;
+            width:100%;
+            height: 100px;
+            line-height: 100px;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 30px;
+            font-family: "Microsoft YaHei";
+            z-index: 3;
+        }
+
+
+        .strong {
+            font-weight:bolder;
+            color: red;
+        }
+    </style>
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <link href="jquery-ui.min.css">
+    <script>
+        $(document).ready(function(){
+            var O_Guangbiao = document.getElementById('Guangbiao');
+            var words = [
+                 '大家好 欢迎来到我的个人简历!',
+                 '这是我的个人技能 自我测评',
+                  '我来自"天府之国🐼"--成都,目前在 北京',
+                   '我今年毕业于(SWUST)西南科技大学',
+                    '这是我的技能表',
+                    '我的在这里实习过',
+                    '这里是我的部分作品,鼠标滑到上面,点击查看',
+                    '注意看电视。。。',
+                    '好了,准备好,我们要跳出地球了(有彩蛋)'
+            ]
+            var s = '我来自"天府之国"--成都,目前在北京';
+            var con =document.getElementById('iWord');
+            var index = 0;
+            var length = s.length;
+            var tId = null;
+            setInterval(function () {
+                toggleGBClass();
+            },500);
+
+            function start(){
+                con.innerHTML= '';
+
+                tId=setInterval(function(){
+                    con.innerHTML +=s.charAt(index);
+                    if(index++ === length){
+                        clearInterval(tId);
+                    }
+
+                },100);
+            }
+
+
+
+
+            start();
+
+            function toggleGBClass() {
+                if(O_Guangbiao.className =='show'){
+                    O_Guangbiao.className ='hide';
+                }else {
+                    O_Guangbiao.className ='show';
+                }
+            }
+        })
+
+
+    </script>
+</head>
+<body>
+<div id="displayword">
+    <div id="wordBckground">
+
+    </div>
+
+    <span id="itextArea"><span>Karl:) </span><span id="iWord"></span><span id="Guangbiao" class="hide">|</span></span>
+</div>
+</body>
+</html>
