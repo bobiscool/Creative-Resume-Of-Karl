@@ -44,14 +44,17 @@ var O_Guangbiao = document.getElementById('Guangbiao');
 var words = [
     '大家好 欢迎来到我的个人简历!',
     '这是我的个人技能 自我测评',
-    '我来自"天府之国🐼"--成都,目前在 北京',
-    '我今年毕业于(SWUST)西南科技大学',
-    '这是我的技能表',
-    '我的在这里实习过',
-    '这里是我的部分作品,鼠标滑到上面,点击查看',
-    '注意看电视。。。',
-    '好了,准备好,我们要跳出地球了(有彩蛋)'
+    '我来自"天府之国🐼"--成都,目前在北京⛩',
+    '我今年毕业于(SWUST)西南科技大学 🎓',
+    '这是我的技能表💪',
+    '我在这里实习过 ✍️',
+    '这里是我的部分作品,鼠标滑到上面,点击查看📚',
+    '注意看电视。。。📺',
+    '好了,准备好,我们要跳出地球了(有彩蛋) ✈️'
 ];
+var wordTimeOut = null;
+var wordTimer = null;
+var wordTimer2 = null;
 var iWord =document.getElementById('iWord');
 O_about.Onoff = true;
 O_csky5.Onoff = false;
@@ -428,8 +431,10 @@ function swimTOwalk(){
                     O_karl.style.display ='none';
                     F_removeKeyListener(walkstyle1, walkstyle2, walkstyle2);
                     O_rocketAudio.play();
+                    F_displayWords(words[8]);
                     setTimeout(function () {
                         F_rocketFly();
+
                     },7000);
 
                     O_rocket.Onoff=true;
@@ -964,23 +969,27 @@ function F_flyhelmet() {
 }
 
 function F_displayWords(which) {
+    clearInterval(wordTimer2);
+    clearInterval(wordTimer);
+    clearTimeout(wordTimeOut);
     $('#displayword').css({'bottom':'-80%'});
     iWord.innerHTML= '';
     var index = 0;
     var length = which.length;
-    var tId = null;
-    setInterval(function () {
+
+    wordTimer2 =setInterval(function () {
         toggleGBClass();
-    },500);
+    },200);
 
     function start(){
         iWord.innerHTML= '';
 
-        tId=setInterval(function(){
+        wordTimer=setInterval(function(){
             iWord.innerHTML +=which.charAt(index);
             if(index++ === length){
-                clearInterval(tId);
-                setTimeout(function () {
+                clearInterval(wordTimer);
+
+                wordTimeOut = setTimeout(function () {
                     $('#displayword').css({'bottom':'-100%'});
                 },3000)
             }
