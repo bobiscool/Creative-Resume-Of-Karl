@@ -41,6 +41,7 @@ var O_chengdu = document.getElementById('chengdu');
 var O_school = document.getElementById('school-Ob');
 var O_car1 = document.getElementById('Car1');
 var O_Guangbiao = document.getElementById('Guangbiao');
+var O_Tinnyplane = document.getElementById('Tinny-plane');
 var words = [
     '大家好 欢迎来到我的个人简历!',
     '这是我的个人技能 自我测评',
@@ -56,10 +57,13 @@ var wordTimeOut = null;
 var wordTimer = null;
 var wordTimer2 = null;
 var iWord =document.getElementById('iWord');
+var O_birdAudio = document.getElementById('birdAudio');
 O_about.Onoff = true;
 O_csky5.Onoff = false;
 var n = 1;
-var O_Car1Imgsrc = new Image();
+O_birdAudio.play();
+O_Tinnyplane.style.left = '8100px';
+O_Tinnyplane.style.top = '1000px';
 //O_Car1Imgsrc.src = '../img/dataDEMO/construction/Car.png';
 //记录当前 创口里面HEAD层真实的位置   用于适配 所有屏幕用的
 window.onresize = positionReset;  //添加 窗口改变时 改变人物位置
@@ -431,6 +435,7 @@ function swimTOwalk(){
                     O_karl.style.display ='none';
                     F_removeKeyListener(walkstyle1, walkstyle2, walkstyle2);
                     O_rocketAudio.play();
+                    O_birdAudio.pause();
                     F_displayWords(words[8]);
                     setTimeout(function () {
                         F_rocketFly();

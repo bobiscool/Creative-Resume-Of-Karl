@@ -581,6 +581,17 @@ body {
     left: 1250px;
     z-index: 80;
 }
+#Tinny-plane {
+    position: absolute;
+    top:0px;
+    left: 50px;
+    z-index: 80;
+    -webkit-transition: all 180s;
+    -moz-transition: all 180s;
+    -ms-transition: all 180s;
+    -o-transition: all 180s;
+    transition: all 180s;
+}
 
 /*以上是 横4区所有的部件 css*/
 
