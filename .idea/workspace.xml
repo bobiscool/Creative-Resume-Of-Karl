@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d5e3b9c9-397f-4a87-8c38-f443520f972d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/Karl's.css" afterPath="$PROJECT_DIR$/CSS/Karl's.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/wuyiping.js" afterPath="$PROJECT_DIR$/js/wuyiping.js" />
     </list>
     <ignored path="wuyipinginteractiveresume.iws" />
@@ -27,7 +25,7 @@
     <favorites_list name="wuyipinginteractiveresume" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.8263254">
+    <splitter split-orientation="vertical" split-proportion="0.5082267">
       <split-first>
         <splitter split-orientation="horizontal" split-proportion="0.42339373">
           <split-first>
@@ -35,8 +33,8 @@
               <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/index.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="144">
-                      <caret line="468" column="42" selection-start-line="468" selection-start-column="42" selection-end-line="468" selection-end-column="42" />
+                    <state relative-caret-position="207">
+                      <caret line="478" column="49" selection-start-line="478" selection-start-column="49" selection-end-line="478" selection-end-column="49" />
                       <folding>
                         <element signature="n#div#2;n#div#0;n#div#2;n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                         <element signature="n#div#3;n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -143,10 +141,10 @@
                 <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="6783">
-                      <caret line="349" column="19" selection-start-line="349" selection-start-column="19" selection-end-line="349" selection-end-column="19" />
+                      <caret line="350" column="19" selection-start-line="350" selection-start-column="19" selection-end-line="350" selection-end-column="19" />
                       <folding>
-                        <marker date="1476096479000" expanded="true" signature="15751:15815" ph="{...}" />
-                        <marker date="1476096479000" expanded="true" signature="15819:15891" ph="{...}" />
+                        <marker date="1476105659000" expanded="true" signature="15775:15839" ph="{...}" />
+                        <marker date="1476105659000" expanded="true" signature="15843:15915" ph="{...}" />
                       </folding>
                     </state>
                   </provider>
@@ -275,10 +273,10 @@
                     <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
                       <provider selected="true" editor-type-id="text-editor">
                         <state relative-caret-position="522">
-                          <caret line="682" column="0" selection-start-line="682" selection-start-column="0" selection-end-line="682" selection-end-column="0" />
+                          <caret line="683" column="0" selection-start-line="683" selection-start-column="0" selection-end-line="683" selection-end-column="0" />
                           <folding>
-                            <marker date="1476096479000" expanded="true" signature="15751:15815" ph="{...}" />
-                            <marker date="1476096479000" expanded="true" signature="15819:15891" ph="{...}" />
+                            <marker date="1476105659000" expanded="true" signature="15775:15839" ph="{...}" />
+                            <marker date="1476105659000" expanded="true" signature="15843:15915" ph="{...}" />
                           </folding>
                         </state>
                       </provider>
@@ -311,16 +309,16 @@
               <file leaf-file-name="wuyiping.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="140">
-                      <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+                    <state relative-caret-position="98">
+                      <caret line="62" column="10" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
                       <folding>
                         <element signature="n#!!block;n#F_meettheWall#0" expanded="false" />
                         <element signature="n#!!block;n#F_shuChangeback2#0" expanded="false" />
                         <element signature="n#!!block;n#F_crashActor#0" expanded="false" />
-                        <element signature="e#13804#14134#0" expanded="false" />
-                        <element signature="e#14269#14515#0" expanded="false" />
+                        <element signature="e#13828#14158#0" expanded="false" />
+                        <element signature="e#14293#14539#0" expanded="false" />
                         <element signature="n#!!block;n#F_rocketFly#0" expanded="false" />
-                        <element signature="e#19410#20394#0" expanded="false" />
+                        <element signature="e#19434#20418#0" expanded="false" />
                         <element signature="n#!!block;n#F_animateAbout#0" expanded="false" />
                         <element signature="n#!!block;n#F_animateChengdu#0" expanded="false" />
                         <element signature="n#!!block;n#F_buildschool#0" expanded="false" />
@@ -351,7 +349,7 @@
                 <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="714">
-                      <caret line="513" column="36" selection-start-line="513" selection-start-column="36" selection-end-line="513" selection-end-column="36" />
+                      <caret line="514" column="36" selection-start-line="514" selection-start-column="36" selection-end-line="514" selection-end-column="36" />
                       <folding />
                     </state>
                   </provider>
@@ -405,8 +403,8 @@
         <option value="$PROJECT_DIR$/experiment/brickwall.html" />
         <option value="$PROJECT_DIR$/experiment/diplay words.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/wuyiping.js" />
         <option value="$PROJECT_DIR$/CSS/Karl's.css" />
+        <option value="$PROJECT_DIR$/js/wuyiping.js" />
       </list>
     </option>
   </component>
@@ -693,12 +691,12 @@
       <workItem from="1473138657069" duration="115900000" />
       <workItem from="1473818952792" duration="63520000" />
       <workItem from="1475735922331" duration="1518000" />
-      <workItem from="1475738933745" duration="90432000" />
+      <workItem from="1475738933745" duration="92246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="473962000" />
+    <option name="totallyTimeSpent" value="475776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1100,17 +1098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6783">
-          <caret line="349" column="19" selection-start-line="349" selection-start-column="19" selection-end-line="349" selection-end-column="19" />
-          <folding>
-            <marker date="1476096479000" expanded="true" signature="15751:15815" ph="{...}" />
-            <marker date="1476096479000" expanded="true" signature="15819:15891" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CSS/Karl's.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -1137,8 +1124,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="468" column="42" selection-start-line="468" selection-start-column="42" selection-end-line="468" selection-end-column="42" />
+        <state relative-caret-position="207">
+          <caret line="478" column="49" selection-start-line="478" selection-start-column="49" selection-end-line="478" selection-end-column="49" />
           <folding>
             <element signature="n#div#2;n#div#0;n#div#2;n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1153,6 +1140,29 @@
             <element signature="n#div#1;n#div#14;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#15;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#16;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="62" column="10" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
+          <folding>
+            <element signature="n#!!block;n#F_meettheWall#0" expanded="false" />
+            <element signature="n#!!block;n#F_shuChangeback2#0" expanded="false" />
+            <element signature="n#!!block;n#F_crashActor#0" expanded="false" />
+            <element signature="e#13828#14158#0" expanded="false" />
+            <element signature="e#14293#14539#0" expanded="false" />
+            <element signature="n#!!block;n#F_rocketFly#0" expanded="false" />
+            <element signature="e#19434#20418#0" expanded="false" />
+            <element signature="n#!!block;n#F_animateAbout#0" expanded="false" />
+            <element signature="n#!!block;n#F_animateChengdu#0" expanded="false" />
+            <element signature="n#!!block;n#F_buildschool#0" expanded="false" />
+            <element signature="n#!!block;n#F_stationery#0" expanded="false" />
+            <element signature="n#!!block;n#F_stationeryHide#0" expanded="false" />
+            <element signature="n#!!block;n#F_animateBachelor#0" expanded="false" />
+            <element signature="n#!!block;n#F_flyhelmet#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -61,6 +61,7 @@ var O_birdAudio = document.getElementById('birdAudio');
 O_about.Onoff = true;
 O_csky5.Onoff = false;
 var n = 1;
+O_birdAudio.value =0.4;
 O_birdAudio.play();
 O_Tinnyplane.style.left = '8100px';
 O_Tinnyplane.style.top = '1000px';
