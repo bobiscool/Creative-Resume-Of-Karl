@@ -1444,7 +1444,7 @@ body {
 #hat {
     position: absolute;
     left: 59px;
-    bottom: 970px;
+    bottom: 1500px;
     z-index: 102;
 }
 
@@ -1490,7 +1490,7 @@ body {
 #panda {
     position: absolute;
     left: 505px;
-    bottom: 980px;
+    bottom: 1500px;
     z-index: 103;
 
 }
@@ -2309,6 +2309,8 @@ body {
 }
 #stationery {
     position: fixed;
+    min-width: 1200px;
+    min-height: 500px;
     width: 100%;
     height: 100%;
     left: 0px;

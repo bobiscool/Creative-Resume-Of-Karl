@@ -64,7 +64,7 @@ O_csky5.Onoff = false;
 var n = 1;
 O_birdAudio.value =0.4;
 O_birdAudio.play();
-$('#stationery').hide();
+// $('#stationery').hide();
 
 O_Tinnyplane.style.left = '6100px';
 O_Tinnyplane.style.top = '1000px';
@@ -212,6 +212,7 @@ function walkstyle4(ev){
                 clearInterval( OT_karlswimAnimation);
                 $(O_karl).stop();
                 document.removeEventListener('keyup',F_floatdown);
+                O_steel.Onoff = true;
                 F_removeKeyListener(walkstyle3,walkstyle4,walkstyle4,function () {
                     F_shuChangeback2();
                 });
@@ -223,7 +224,7 @@ function walkstyle4(ev){
             }
 
         } else {
-        F_meettheWall(O_CaodiAndDadi,true,280);
+        F_meettheWall(O_CaodiAndDadi,true,0);
 
             //ar OT_shifouzhuangdaoleludi=
             if (!O_CaodiAndDadi.Onoff){
@@ -248,6 +249,7 @@ function walkstyle3(ev) {
             clearInterval( OT_karlswimAnimation);
             $(O_karl).stop();
             O_meetCar1.meet();//判断 百度云
+            // O_steel.Onoff = true;
             document.removeEventListener('keyup',F_floatdown);// 取消监听  float
             F_removeKeyListener(walkstyle3,walkstyle4,walkstyle4,function () {//取消监听 游泳事件
                 F_shuChangeback2();//改变 背景
@@ -424,12 +426,14 @@ function F_meettheWall(obj,LR,long){
 
 function swimTOwalk(){
     var i=0;
-    $(O_karl).animate({'bottom': 0+'px'}, 'slow', "easeInCirc");
+
     var OT_swimTOwalktimer = setInterval(function(){
         if(i<=10){walksteps++}
         O_karl.src ='img/swimTOwalk/swimTOwalk_'+i+'.png';
         if(i>=59){clearInterval(OT_swimTOwalktimer);console.log('开启运动模式');
+            $(O_karl).animate({'bottom': 0+'px'}, 'fast', "easeInCirc");
             Walking();  //此处 开启在船坞上面的判断
+            F_meetsteelRight();
         $('#smalldog').css({'left':'0'});
             F_meettheWall(O_rocket,false,180);
 
@@ -481,6 +485,8 @@ function F_shuChangeback2(){
     $(CaodiAndDadi).animate({'top': 0+'px'}, 500, "linear",function () {
 
     });
+
+
 
 
 
@@ -1026,4 +1032,20 @@ function F_displayWords(which) {
             O_Guangbiao.className ='show';
         }
     }
+}
+
+
+function F_meetsteelRight(){
+
+    var n = parseFloat($(O_karl).offset().left);
+    O_steel.timer = setInterval(function () {
+        if (n <= parseFloat($(O_steel).offset().left) ) {
+           O_steel.Onoff = false;//如果从右到左 的时候
+            clearInterval(O_steel.timer);
+        } else {
+            O_steel.Onoff = true;
+        }
+    }, 20);
+
+
 }
