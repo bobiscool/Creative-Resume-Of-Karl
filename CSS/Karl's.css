@@ -89,7 +89,7 @@ body {
 #Karl {
     width: 270px;
     height: 340px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     margin-left: -135px;
     margin-bottom: -10px;
     position: absolute;
