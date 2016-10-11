@@ -16,6 +16,8 @@ body {
     position: fixed;
     left: 0;
     top: 0;
+    min-width: 800px;
+    min-height: 500px;
     width: 100%;
     height: 100%; /*这样布局 保证在每个屏幕上都不会出现 滚动条*/
     overflow: hidden;
@@ -1420,6 +1422,7 @@ body {
     width: 1500px;
     height: 80%;
     bottom: 20%;
+
 }
 
 #frame {
@@ -2311,6 +2314,7 @@ body {
     left: 0px;
     top: 0px;
     z-index: 107;
+
 }
 
 #book1 {

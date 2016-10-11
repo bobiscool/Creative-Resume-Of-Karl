@@ -64,7 +64,7 @@ O_csky5.Onoff = false;
 var n = 1;
 O_birdAudio.value =0.4;
 O_birdAudio.play();
-
+$('#stationery').hide();
 
 O_Tinnyplane.style.left = '6100px';
 O_Tinnyplane.style.top = '1000px';
@@ -248,10 +248,9 @@ function walkstyle3(ev) {
             clearInterval( OT_karlswimAnimation);
             $(O_karl).stop();
             O_meetCar1.meet();//判断 百度云
-            document.removeEventListener('keyup',F_floatdown);
-            F_removeKeyListener(walkstyle3,walkstyle4,walkstyle4,function () {
-                F_shuChangeback2();
-
+            document.removeEventListener('keyup',F_floatdown);// 取消监听  float
+            F_removeKeyListener(walkstyle3,walkstyle4,walkstyle4,function () {//取消监听 游泳事件
+                F_shuChangeback2();//改变 背景
             });
 
             console.log('撞墙了');
@@ -425,12 +424,14 @@ function F_meettheWall(obj,LR,long){
 
 function swimTOwalk(){
     var i=0;
+    $(O_karl).animate({'bottom': 0+'px'}, 'slow', "easeInCirc");
     var OT_swimTOwalktimer = setInterval(function(){
         if(i<=10){walksteps++}
         O_karl.src ='img/swimTOwalk/swimTOwalk_'+i+'.png';
-        if(i>=59){clearInterval(OT_swimTOwalktimer);console.log('开启运动模式');Walking();  //此处 开启在船坞上面的判断
+        if(i>=59){clearInterval(OT_swimTOwalktimer);console.log('开启运动模式');
+            Walking();  //此处 开启在船坞上面的判断
         $('#smalldog').css({'left':'0'});
-            F_meettheWall(O_rocket,false,180)
+            F_meettheWall(O_rocket,false,180);
 
             var OT_rocketTimer1 = setInterval(function(){
                 console.log(parseFloat(O_karl.offsetLeft) +parseFloat(O_karl.offsetWidth)+'karl');
@@ -459,7 +460,7 @@ function swimTOwalk(){
         i++;
     },15);
 
-    $(O_karl).animate({'bottom': 0+'px'}, 'slow', "easeInCirc");
+
 
         }
 
@@ -472,15 +473,16 @@ function F_shuChangeback2(){
     O_karl.style.marginBottom = '0px';
     $('#bubles').removeClass('ALLdisplayshow').addClass('displaynone');
 
-
     $(O_shanAndbird).addClass('ALLdisplayshow');
 
     //O_Sea.style.top= "80%";
     //$(O_Sea).animate({'top': "80%"}, 'slow', "easeOutExpo");
-
+    swimTOwalk();
     $(CaodiAndDadi).animate({'top': 0+'px'}, 500, "linear",function () {
-        swimTOwalk();
+
     });
+
+
 
 }
 
@@ -809,6 +811,7 @@ function  F_meettheChengdu(){
             if (!O_chengdu.Onoff){
                 clearInterval(OT_meetChengduTimer);
                 clearInterval(O_about.timer);
+
                 F_displayWords(words[2]);
                 F_animateChengdu();
                 F_meettheSchool();
@@ -845,6 +848,7 @@ function  F_meettheSchool(){
             if (!O_school.Onoff){
                 clearInterval(OT_meetschoolTimer);
                 F_displayWords(words[3]);
+                $('#stationery').show();
                 F_buildschool();
                 F_stationery();
                 F_animateBachelor();
