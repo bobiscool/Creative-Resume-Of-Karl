@@ -479,7 +479,7 @@ function swimTOwalk(){
                  //火箭起飞
                     clearInterval(OT_rocketTimer1);
                     O_karl.style.display ='none';
-                    F_removeKeyListener(walkstyle1, walkstyle2, walkstyle2);
+                    F_removeKeyListener(walkstyle1, walkstyle5, walkstyle5);
                     O_rocketAudio.play();
                     O_birdAudio.pause();
                     F_displayWords(words[8]);
@@ -660,9 +660,9 @@ var O_meetTv = new F_crashActor('bigTvArea',function () {
 
 
 function Baiduyun_Ani() {
-    F_removeKeyListener(walkstyle1, walkstyle2, walkstyle2);
+    F_removeKeyListener(walkstyle1, walkstyle5, walkstyle5);
     setTimeout(function () {
-        F_addKeyListener(walkstyle1, walkstyle2, walkstyle2);
+        F_addKeyListener(walkstyle1, walkstyle5, walkstyle5);
     },2000);
     $('#Car1Img').animate({'left':'100'},1000,'linear',function(){
         $('#Fandou').css({'transform':'rotate(-30deg)'});
@@ -680,9 +680,9 @@ function Baiduyun_Ani() {
 
 
 function  BigCar_Ani() {
-    F_removeKeyListener(walkstyle1, walkstyle2, walkstyle2);
+    F_removeKeyListener(walkstyle1, walkstyle5, walkstyle5);
     setTimeout(function () {
-        F_addKeyListener(walkstyle1, walkstyle2, walkstyle2);
+        F_addKeyListener(walkstyle1, walkstyle5, walkstyle5);
     },2000);
     $('#BigCar').css({'left':0});
     $('.Luntai2').css({'transform':'rotate(-270deg)'});
@@ -690,7 +690,7 @@ function  BigCar_Ani() {
 function TV_show() {
     var Movie4 = document.getElementById('dpa4');
     setTimeout(function () {
-        F_removeKeyListener(walkstyle1, walkstyle2, walkstyle2);
+        F_removeKeyListener(walkstyle1, walkstyle5, walkstyle5);
         $('#dpa1').hide();
         $('#TVbtn2').css({'transform':'rotate(30deg)'})
     },1000);
@@ -698,7 +698,7 @@ function TV_show() {
     setTimeout(function () {
         $('#dpa2').hide();
         $('#TVbtn2').css({'transform':'rotate(60deg)'})
-        F_addKeyListener(walkstyle1, walkstyle2, walkstyle2);
+        F_addKeyListener(walkstyle1, walkstyle5, walkstyle5);
     },2000);
 
     setTimeout(function () {
