@@ -43,13 +43,14 @@ var O_car1 = document.getElementById('Car1');
 var O_Guangbiao = document.getElementById('Guangbiao');
 var O_Tinnyplane = document.getElementById('Tinny-plane');
 var O_HotBalon = document.getElementById('HotBalon');
+var O_brickWall = document.getElementById('brickwall');
 var words = [
     '大家好 欢迎来到我的个人简历!',
     '这是我的个人技能 自我测评',
     '我来自"天府之国🐼"--成都,目前在北京⛩',
     '我今年毕业于(SWUST)西南科技大学 🎓',
     '这是我的技能表💪',
-    '我在这里实习过 ✍️',
+    '我在这里实习过 💻',
     '这里是我的部分作品,鼠标滑到上面,点击查看📚',
     '注意看电视。。。📺',
     '好了,准备好,我们要跳出地球了(有彩蛋) ✈️'
@@ -86,6 +87,13 @@ function Walking() {//这个函数要 加工一下 因为就是这函数带动�
     OKarl2.style.display = "block";
     O_karl.className= "walkAnimation walk_" +0;
     F_addKeyListener(walkstyle1, walkstyle2, walkstyle2);
+}
+
+function Walking2() {
+    OKarl2.style.display = "block";
+    O_karl.className= "walkAnimation walk_" +0;
+    F_addKeyListener(walkstyle1, walkstyle5, walkstyle5);
+
 }
 
 
@@ -212,7 +220,7 @@ function walkstyle4(ev){
                 clearInterval( OT_karlswimAnimation);
                 $(O_karl).stop();
                 document.removeEventListener('keyup',F_floatdown);
-                O_steel.Onoff = true;
+                // O_steel.Onoff = true;
                 F_removeKeyListener(walkstyle3,walkstyle4,walkstyle4,function () {
                     F_shuChangeback2();
                 });
@@ -232,7 +240,7 @@ function walkstyle4(ev){
             }else{
                 walksteps = walksteps - 1;
                 if(O_Sea.Onoff) {
-                    console.log('down');
+                    // console.log('down');
                     $(O_karl).stop().animate({'bottom': '0'}, 3000, "easeInCubic");
                     $('#bubles').stop().animate({'top': '76'}, 3000, "easeInCubic");
                     O_Sea.Onoff=false;
@@ -249,13 +257,13 @@ function walkstyle3(ev) {
             clearInterval( OT_karlswimAnimation);
             $(O_karl).stop();
             O_meetCar1.meet();//判断 百度云
-            // O_steel.Onoff = true;
+             O_steel.Onoff = true;
             document.removeEventListener('keyup',F_floatdown);// 取消监听  float
             F_removeKeyListener(walkstyle3,walkstyle4,walkstyle4,function () {//取消监听 游泳事件
                 F_shuChangeback2();//改变 背景
             });
 
-            console.log('撞墙了');
+            // console.log('撞墙了');
         }
         if(!O_Sea.Onoff) {
             $(O_karl).stop().animate({'bottom': '100'}, 2000, "easeInCubic"); //附上上来
@@ -267,6 +275,30 @@ function walkstyle3(ev) {
 }
 
 
+function walkstyle5(ev) {
+
+    if (ev.wheelDelta) {//Chrome下,e.wheelDelta<0向下滚动
+        onoff = ev.wheelDelta < 0 ? true : false;
+    }
+    if (ev.detail) {//火狐下
+        onoff = ev.detail > 0 ? true : false;
+    }
+
+
+    if (onoff) {
+        walksteps++;
+        O_karl.className = "walkAnimation walk_" + (walksteps % 4);
+    } else {
+
+        if (!O_brickWall.Onoff){
+            walksteps +=0;
+        }else{
+            walksteps = walksteps - 1;
+            O_karl.className = "walkAnimation walk_" + (walksteps % 4);
+        }
+    }
+}
+
 
 function F_floatwheswim(){  //有用的时候稍微浮起来 一点 f放手 又飘下去
     document.addEventListener('keyup',F_floatdown)
@@ -275,7 +307,7 @@ function F_floatwheswim(){  //有用的时候稍微浮起来 一点 f放手 又�
 function F_floatdown(){
     //console.log('down');
     if(O_Sea.Onoff) {
-        console.log('down');
+        // console.log('down');
         $(O_karl).stop().animate({'bottom': '0'}, 3000, "easeInCubic");
         $('#bubles').stop().animate({'top': '76'}, 3000, "easeInCubic");
         O_Sea.Onoff=false;
@@ -411,8 +443,8 @@ function F_meettheWall(obj,LR,long){
         }, 20);
     }else{
         var n = parseFloat($(O_karl).offset().left) +parseFloat(O_karl.offsetWidth) ;
-        console.log(n+'-----------'+parseFloat($(obj).offset().left));
-        console.log('钢板or火箭'+parseFloat($(obj).offset().left));
+        // console.log(n+'-----------'+parseFloat($(obj).offset().left));
+        // console.log('钢板or火箭'+parseFloat($(obj).offset().left));
         obj.timer = setInterval(function () {
             if (n >= parseFloat($(obj).offset().left)+long ) {
                 clearInterval(obj.timer);
@@ -426,20 +458,21 @@ function F_meettheWall(obj,LR,long){
 
 function swimTOwalk(){
     var i=0;
-
+    $(O_karl).animate({'bottom': 0+'px'}, 'fast', "easeInCirc");
     var OT_swimTOwalktimer = setInterval(function(){
         if(i<=10){walksteps++}
         O_karl.src ='img/swimTOwalk/swimTOwalk_'+i+'.png';
-        if(i>=59){clearInterval(OT_swimTOwalktimer);console.log('开启运动模式');
-            $(O_karl).animate({'bottom': 0+'px'}, 'fast', "easeInCirc");
-            Walking();  //此处 开启在船坞上面的判断
+        if(i>=59){clearInterval(OT_swimTOwalktimer);
+            // console.log('开启运动模式');
+
+            Walking2();  //此处 开启在船坞上面的判断
             F_meetsteelRight();
         $('#smalldog').css({'left':'0'});
             F_meettheWall(O_rocket,false,180);
-
+            F_meetsteelRight();
             var OT_rocketTimer1 = setInterval(function(){
-                console.log(parseFloat(O_karl.offsetLeft) +parseFloat(O_karl.offsetWidth)+'karl');
-                console.log('火箭'+parseFloat($(O_rocket).offset().left));
+                // console.log(parseFloat(O_karl.offsetLeft) +parseFloat(O_karl.offsetWidth)+'karl');
+                // console.log('火箭'+parseFloat($(O_rocket).offset().left));
                 if(!O_rocket.Onoff){
                  //  F_rocketFly();  先是人物 跳上 火箭  这个后面调节
                  //背景声音响起
@@ -1038,14 +1071,13 @@ function F_displayWords(which) {
 function F_meetsteelRight(){
 
     var n = parseFloat($(O_karl).offset().left);
-    O_steel.timer = setInterval(function () {
-        if (n <= parseFloat($(O_steel).offset().left) ) {
-           O_steel.Onoff = false;//如果从右到左 的时候
-            clearInterval(O_steel.timer);
+    O_brickWall.timer = setInterval(function () {
+        if (n <= parseFloat($(O_brickWall).offset().left) ) {
+            O_brickWall.Onoff = false;//如果从右到左 的时候
+            console.log('到了左边了')
+            clearInterval( O_brickWall.timer);
         } else {
-            O_steel.Onoff = true;
+            O_brickWall.Onoff = true;
         }
-    }, 20);
-
-
+    }, 15);
 }
