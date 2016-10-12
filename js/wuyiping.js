@@ -477,8 +477,19 @@ function swimTOwalk(){
                  //  F_rocketFly();  先是人物 跳上 火箭  这个后面调节
                  //背景声音响起
                  //火箭起飞
+                    $(O_karl).animate({'bottom':'100px'},100,'easeOutCirc');
                     clearInterval(OT_rocketTimer1);
-                    O_karl.style.display ='none';
+                    var i = 0;
+                    var O_karlTimer = setInterval(function(){
+                        i++;
+                        if(i<=19){
+                            O_karl.className = 'gotorocket gotorocket_'+i;
+                        }else {
+                            clearInterval(O_karlTimer);
+                            O_karl.className = 'hide';
+                        }
+
+                    },30);
                     F_removeKeyListener(walkstyle1, walkstyle5, walkstyle5);
                     O_rocketAudio.play();
                     O_birdAudio.pause();
@@ -824,19 +835,19 @@ function F_meettheAbout(){
 
 
 function F_animateAbout(){
-    $('#Code-mill').animate({'top': '-64vh'}, 500, 'easeOutElastic',function () {
-        $('#Design-mill').animate({'top': '-50vh'}, 500, 'easeOutElastic',function () {
-            $('#Animation-mill').animate({'top': '-64vh'}, 500, 'easeOutElastic',function () {
-                $('#Exercise-mill').animate({'top': '-78vh'}, 500, 'easeOutElastic').addClass('rotateMill4');
-                $('#mill-pole4').animate({'height': '77vh'}, 500, 'easeOutElastic');
+    $('#Code-mill').animate({'bottom': '240px'}, 500, 'easeOutElastic',function () {
+        $('#Design-mill').animate({'bottom': '120px'}, 500, 'easeOutElastic',function () {
+            $('#Animation-mill').animate({'bottom': '240px'}, 500, 'easeOutElastic',function () {
+                $('#Exercise-mill').animate({'bottom': '370px'}, 500, 'easeOutElastic').addClass('rotateMill4');
+                $('#mill-pole4').animate({'height': '470px'}, 500, 'easeOutElastic');
             }).addClass('rotateMill3');
-            $('#mill-pole3').animate({'height': '63vh'}, 500, 'easeOutElastic');
+            $('#mill-pole3').animate({'height': '340px'}, 500, 'easeOutElastic');
         }).addClass('rotateMill2');
-        $('#mill-pole2').animate({'height': '49vh'}, 500, 'easeOutElastic');
+        $('#mill-pole2').animate({'height': '220px'}, 500, 'easeOutElastic');
 
     }).addClass('rotateMill1');
 
-    $('#mill-pole1').animate({'height': '63vh'}, 500, 'easeOutElastic');
+    $('#mill-pole1').animate({'height': '340px'}, 500, 'easeOutElastic');
 
 
 

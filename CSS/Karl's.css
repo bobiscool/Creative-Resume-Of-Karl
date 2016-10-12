@@ -1246,7 +1246,7 @@ body {
 
 #About li {
     list-style: none;
-    margin-top: 5vh;
+    margin-top: 40px;
 }
 
 .LIfont {
@@ -1266,16 +1266,15 @@ body {
     position: absolute;
     width: 1200px;
     bottom:20%;
-    height: 70%;
+    height:1000px;
     left: 2300px;
 }
 
 #About-title {
     position: absolute;
     width: 1000px;
-    left: 0px;
-    top: 0;
-    margin-left: 100px;
+    left:160px;
+    bottom: 460px;
     height: 50px;
     line-height: 50px;
 
@@ -1295,15 +1294,15 @@ body {
     position: absolute;
     width: 1000px;
     left: 0px;
-    top: 100px;
-    height: 200px;
+    bottom: 0px;
+    height: 500px;
     z-index: 99;
 }
 
 #plants {
     position: absolute;
     left: 220px;
-    top: 90vh;
+    bottom:0;
 }
 
 #plants img {
@@ -1386,7 +1385,7 @@ body {
 .mill-pole {
     position: absolute;
     width: 10px;
-    bottom: -10vh;
+    bottom:0;
     background: #22242C;
     z-index: 99;
 }
@@ -1394,22 +1393,22 @@ body {
 
 
 #mill-pole1 {
-    height: 10vh;
+    height: 0;
     left: 92px;
 }
 
 #mill-pole2 {
-    height: 10vh;
+    height: 0;
     left: 273px;
 }
 
 #mill-pole3 {
-    height: 10vh;
+    height: 0;
     left: 514px;
 }
 
 #mill-pole4 {
-    height: 10vh;
+    height: 0;
     left: 762px;
 }
 
@@ -2028,10 +2027,11 @@ body {
 #school-Ob {
     position: absolute;
     left: 5600px;
-    top: 0;
+    bottom: 20%;
     width: 3000px;
-    height: 80%;
+    height: 717px;
     z-index: 105;
+    overflow: hidden;
 }
 
 #school {
@@ -3321,3 +3321,26 @@ a {
     left:4800px;
     top:140px;
 }
+
+/**/
+.gotorocket { background: url('../img/walktorocket.png');}
+.gotorocket_0 { width: 148px; height: 174px; background-position: 0 0; }
+.gotorocket_1 { width: 148px; height: 174px; background-position: 0 -184px; }
+.gotorocket_2 { width: 148px; height: 174px; background-position: 0 -368px; }
+.gotorocket_3 { width: 148px; height: 174px; background-position: 0 -552px; }
+.gotorocket_4 { width: 148px; height: 174px; background-position: 0 -736px; }
+.gotorocket_5 { width: 148px; height: 174px; background-position: 0 -920px; }
+.gotorocket_6 { width: 148px; height: 174px; background-position: 0 -1104px; }
+.gotorocket_7 { width: 148px; height: 174px; background-position: 0 -1288px; }
+.gotorocket_8 { width: 148px; height: 174px; background-position: 0 -1472px; }
+.gotorocket_9 { width: 148px; height: 174px; background-position: 0 -1656px; }
+.gotorocket_10 { width: 148px; height: 174px; background-position: 0 -1840px; }
+.gotorocket_11 { width: 148px; height: 174px; background-position: 0 -2024px; }
+.gotorocket_12 { width: 148px; height: 174px; background-position: 0 -2208px; }
+.gotorocket_13 { width: 148px; height: 174px; background-position: 0 -2392px; }
+.gotorocket_14 { width: 148px; height: 174px; background-position: 0 -2576px; }
+.gotorocket_15 { width: 148px; height: 174px; background-position: 0 -2760px; }
+.gotorocket_16 { width: 148px; height: 174px; background-position: 0 -2944px; }
+.gotorocket_17 { width: 148px; height: 174px; background-position: 0 -3128px; }
+.gotorocket_18 { width: 148px; height: 174px; background-position: 0 -3312px; }
+.gotorocket_19 { width: 148px; height: 174px; background-position: 0 -3496px; }
