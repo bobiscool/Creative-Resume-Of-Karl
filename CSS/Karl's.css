@@ -2869,9 +2869,9 @@ a {
 
 #Baiduyun {
     position: absolute;
-    background: url("../img/dataDEMO/construction/cloud2.png");
+    background: url("../img/dataDEMO/construction/cloud3.png");
     width: 330px;
-    height: 313px;
+    height: 362px;
     left: 948px;
     bottom: 180px;
     transform-origin:0 100%;
@@ -2882,6 +2882,8 @@ a {
     transition: transform 0.6s linear;
     z-index: 1;
 }
+
+
 
 .Luntai {
     transform-origin:50% 50%;
