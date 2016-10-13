@@ -59,12 +59,9 @@ var wordTimeOut = null;
 var wordTimer = null;
 var wordTimer2 = null;
 var iWord =document.getElementById('iWord');
-var O_birdAudio = document.getElementById('birdAudio');
 O_about.Onoff = true;
 O_csky5.Onoff = false;
 var n = 1;
-O_birdAudio.value =0.4;
-O_birdAudio.play();
 // $('#stationery').hide();
 
 O_Tinnyplane.style.left = '6100px';
@@ -492,7 +489,6 @@ function swimTOwalk(){
                     },30);
                     F_removeKeyListener(walkstyle1, walkstyle5, walkstyle5);
                     O_rocketAudio.play();
-                    O_birdAudio.pause();
                     F_displayWords(words[8]);
                     setTimeout(function () {
                         F_rocketFly();
