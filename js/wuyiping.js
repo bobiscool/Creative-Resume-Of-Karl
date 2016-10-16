@@ -72,7 +72,7 @@ O_HotBalon.style.top = '1100px';
 //O_Car1Imgsrc.src = '../img/dataDEMO/construction/Car.png';
 //记录当前 创口里面HEAD层真实的位置   用于适配 所有屏幕用的
 window.onresize = positionReset;  //添加 窗口改变时 改变人物位置
-O_meetCar1.meet();//判断 百度云
+
 
 //     var KarlWalk  = new AnimationObjects({who:OKarl2,where:'',how:Walking}); //没卵用啊 ??
 // console.log(KarlWalk);
@@ -641,6 +641,7 @@ var O_meetCar1 = new F_crashActor('Car1',function(){
     F_displayWords(words[5]);
     O_meetBigCar.meet();
 });
+O_meetCar1.meet();//判断 百度云
 
 var O_meetBigCar = new F_crashActor('BigCarArea',function () {
     setTimeout(function(){
