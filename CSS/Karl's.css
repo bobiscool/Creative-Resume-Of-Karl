@@ -5,11 +5,11 @@ body {
 }
 
 .moveSmooth {
-    -webkit-transition: 0.05s;
-    -moz-transition: 0.05s;
-    -ms-transition: 0.05s;
-    -o-transition: 0.05s;
-    transition: 0.05s;
+    /*-webkit-transition: 0.05s;*/
+    /*-moz-transition: 0.05s;*/
+    /*-ms-transition: 0.05s;*/
+    /*-o-transition: 0.05s;*/
+    /*transition: 0.05s;*/
 }
 
 #adventure {
