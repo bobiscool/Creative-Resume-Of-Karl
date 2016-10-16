@@ -513,6 +513,7 @@ function swimTOwalk(){
 
 function F_shuChangeback2(){
     positionKarl();
+    O_meetCar1.meet();//判断 百度云
     O_karl.style.maxWidth = '160px';
     O_karl.style.marginBottom = '0px';
     $('#bubles').removeClass('ALLdisplayshow').addClass('displaynone');
@@ -641,7 +642,7 @@ var O_meetCar1 = new F_crashActor('Car1',function(){
     F_displayWords(words[5]);
     O_meetBigCar.meet();
 });
-O_meetCar1.meet();//判断 百度云
+
 
 var O_meetBigCar = new F_crashActor('BigCarArea',function () {
     setTimeout(function(){
