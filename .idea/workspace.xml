@@ -146,8 +146,8 @@
                     <state relative-caret-position="249">
                       <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
                       <folding>
-                        <marker date="1476693334000" expanded="true" signature="17494:17558" ph="{...}" />
-                        <marker date="1476693334000" expanded="true" signature="17562:17634" ph="{...}" />
+                        <marker date="1476693363000" expanded="true" signature="17491:17555" ph="{...}" />
+                        <marker date="1476693363000" expanded="true" signature="17559:17631" ph="{...}" />
                       </folding>
                     </state>
                   </provider>
@@ -270,8 +270,8 @@
                         <state relative-caret-position="14658">
                           <caret line="748" column="0" selection-start-line="748" selection-start-column="0" selection-end-line="748" selection-end-column="0" />
                           <folding>
-                            <marker date="1476693334000" expanded="true" signature="17494:17558" ph="{...}" />
-                            <marker date="1476693334000" expanded="true" signature="17562:17634" ph="{...}" />
+                            <marker date="1476693363000" expanded="true" signature="17491:17555" ph="{...}" />
+                            <marker date="1476693363000" expanded="true" signature="17559:17631" ph="{...}" />
                           </folding>
                         </state>
                       </provider>
@@ -304,11 +304,11 @@
               <file leaf-file-name="wuyiping.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="288">
-                      <caret line="443" column="39" selection-start-line="443" selection-start-column="39" selection-end-line="443" selection-end-column="39" />
+                    <state relative-caret-position="351">
+                      <caret line="375" column="40" selection-start-line="375" selection-start-column="40" selection-end-line="375" selection-end-column="40" />
                       <folding>
-                        <marker date="1476693334000" expanded="true" signature="17494:17558" ph="{...}" />
-                        <marker date="1476693334000" expanded="true" signature="17562:17634" ph="{...}" />
+                        <marker date="1476693363000" expanded="true" signature="17491:17555" ph="{...}" />
+                        <marker date="1476693363000" expanded="true" signature="17559:17631" ph="{...}" />
                       </folding>
                     </state>
                   </provider>
@@ -344,8 +344,8 @@
                     <state relative-caret-position="178">
                       <caret line="891" column="42" selection-start-line="891" selection-start-column="42" selection-end-line="891" selection-end-column="42" />
                       <folding>
-                        <marker date="1476693334000" expanded="true" signature="17494:17558" ph="{...}" />
-                        <marker date="1476693334000" expanded="true" signature="17562:17634" ph="{...}" />
+                        <marker date="1476693363000" expanded="true" signature="17491:17555" ph="{...}" />
+                        <marker date="1476693363000" expanded="true" signature="17559:17631" ph="{...}" />
                       </folding>
                     </state>
                   </provider>
@@ -580,12 +580,12 @@
       <workItem from="1473818952792" duration="63520000" />
       <workItem from="1475735922331" duration="1518000" />
       <workItem from="1475738933745" duration="122037000" />
-      <workItem from="1476200885170" duration="35267000" />
+      <workItem from="1476200885170" duration="35298000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="540834000" />
+    <option name="totallyTimeSpent" value="540865000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1019,11 +1019,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="443" column="39" selection-start-line="443" selection-start-column="39" selection-end-line="443" selection-end-column="39" />
+        <state relative-caret-position="351">
+          <caret line="375" column="40" selection-start-line="375" selection-start-column="40" selection-end-line="375" selection-end-column="40" />
           <folding>
-            <marker date="1476693334000" expanded="true" signature="17494:17558" ph="{...}" />
-            <marker date="1476693334000" expanded="true" signature="17562:17634" ph="{...}" />
+            <marker date="1476693363000" expanded="true" signature="17491:17555" ph="{...}" />
+            <marker date="1476693363000" expanded="true" signature="17559:17631" ph="{...}" />
           </folding>
         </state>
       </provider>
