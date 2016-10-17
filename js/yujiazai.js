@@ -17,7 +17,7 @@ n1.onload = function () {
     O_Laocar.src = n1.src;
 
     n2.src = './img/Pgrass.png';
-    n2.onload() = function () {
+    n2.onload = function () {
         O_Pgrass.src = n2.src;
         preloadimages(arr);
     }
