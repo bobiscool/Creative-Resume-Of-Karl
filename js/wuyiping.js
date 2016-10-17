@@ -125,6 +125,14 @@ Oimg_farer1.src = newimages[15].src;
 var Oimg_farer2 = document.getElementById('farer-mountain2');
 Oimg_farer2.src = newimages[15].src;
 
+var Oimg_wood = document.getElementById('woodbordIMG');
+Oimg_wood.src = newimages[16].src;
+
+
+var Aimg_mill = document.getElementsByClassName('mill-pole');
+for ( i = 0;i<Aimg_mill.length;i++){
+    Aimg_mill[i].style.backgroundImage = 'url('+newimages[17].src+')';
+}
 //     var KarlWalk  = new AnimationObjects({who:OKarl2,where:'',how:Walking}); //没卵用啊 ??
 // console.log(KarlWalk);
 
