@@ -78,6 +78,46 @@ setInterval(function(){
     console.log(walksteps)
 },100);
 
+var Aimg = document.getElementsByClassName('forestIMG');
+for (var i = 0;i<Aimg.length;i++){
+    Aimg[i].src = newimages[4].src;
+}
+
+var Oimg_dadi = document.getElementsByClassName('dadi')[0];
+Oimg_dadi.style.backgroundImage = 'url('+newimages[5].src+')';
+
+var Oimg_cao = document.getElementsByClassName('cao')[0];
+Oimg_cao.style.backgroundImage = 'url('+newimages[6].src+')';
+var Aimg_treeA = document.getElementsByClassName('tree-A');
+for ( i = 0;i<Aimg_treeA.length;i++){
+    Aimg_treeA[i].style.backgroundImage = 'url('+newimages[7].src+')';
+}
+
+var Aimg_treeB = document.getElementsByClassName('tree-B');
+for ( i = 0;i<Aimg_treeB.length;i++){
+    Aimg_treeB[i].style.backgroundImage = 'url('+newimages[8].src+')';
+}
+var Aimg_treeC = document.getElementsByClassName('tree-C');
+for ( i = 0;i<Aimg_treeC.length;i++){
+    Aimg_treeC[i].style.backgroundImage = 'url('+newimages[9].src+')';
+}
+
+
+var titleKarl = document.getElementById('title-karl');
+titleKarl.style.backgroundImage = 'url('+newimages[10].src+')';
+
+var Oimg_farmount1 = document.getElementById('far-mountain-1');
+Oimg_farmount1.src = newimages[11].src;
+
+var Oimg_farmount2 = document.getElementById('far-mountain-2');
+Oimg_farmount2.src = newimages[12].src;
+
+
+var Oimg_Tinny = document.getElementById('Tinny-plane');
+Oimg_Tinny.src = newimages[13].src;
+
+var Oimg_HotBalon = document.getElementById('HotBalon');
+Oimg_HotBalon.src = newimages[14].src;
 //     var KarlWalk  = new AnimationObjects({who:OKarl2,where:'',how:Walking}); //没卵用啊 ??
 // console.log(KarlWalk);
 
