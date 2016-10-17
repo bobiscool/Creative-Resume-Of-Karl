@@ -92,6 +92,7 @@ function Walking() {//这个函数要 加工一下 因为就是这函数带动�
 
 function Walking2() {
     OKarl2.style.display = "block";
+    O_karl.style.backgroundImage= 'url('+newimages[2].src+')';
     O_karl.className= "walkAnimation walk_" +0;
     F_addKeyListener(walkstyle1, walkstyle5, walkstyle5);
 
