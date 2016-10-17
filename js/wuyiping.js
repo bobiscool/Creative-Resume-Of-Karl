@@ -129,7 +129,8 @@ var Oimg_wood = document.getElementById('woodbordIMG');
 Oimg_wood.src = newimages[16].src;
 
 
-var Aimg_mill = document.getElementsByClassName('mill-pole');
+var Oimg_plants =  document.getElementById('plants');
+var Aimg_mill = Oimg_plants.getElementsByTagName('img');
 for ( i = 0;i<Aimg_mill.length;i++){
     Aimg_mill[i].style.backgroundImage = 'url('+newimages[17].src+')';
 }
