@@ -70,6 +70,7 @@ function preloadimages(arr){
 
             if (this.index == 1){
                 console.log(1);
+                UPpreloaderDiv();
             }
 
         }

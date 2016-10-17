@@ -327,8 +327,8 @@
               <file leaf-file-name="yujiazai.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/js/yujiazai.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="141">
-                      <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+                    <state relative-caret-position="97">
+                      <caret line="72" column="32" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
                       <folding />
                     </state>
                   </provider>
@@ -580,12 +580,12 @@
       <workItem from="1473818952792" duration="63520000" />
       <workItem from="1475735922331" duration="1518000" />
       <workItem from="1475738933745" duration="122037000" />
-      <workItem from="1476200885170" duration="31412000" />
+      <workItem from="1476200885170" duration="31444000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="536979000" />
+    <option name="totallyTimeSpent" value="537011000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -970,8 +970,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+        <state relative-caret-position="75">
+          <caret line="181" column="1" selection-start-line="181" selection-start-column="1" selection-end-line="181" selection-end-column="1" />
           <folding>
             <marker date="1476688772000" expanded="true" signature="17342:17406" ph="{...}" />
             <marker date="1476688772000" expanded="true" signature="17410:17482" ph="{...}" />
@@ -999,14 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/yujiazai.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
@@ -1025,6 +1017,14 @@
             <element signature="n#div#15;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#16;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/yujiazai.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="72" column="32" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
