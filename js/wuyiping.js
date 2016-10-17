@@ -236,7 +236,7 @@ function walkstyle4(ev){
         F_meettheWall(O_CaodiAndDadi,true,0);
 
             //ar OT_shifouzhuangdaoleludi=
-            if (!O_CaodiAndDadi.Onoff){
+            if (walksteps<=155){
                 walksteps +=0;
             }else{
                 walksteps = walksteps - 1;
@@ -291,7 +291,7 @@ function walkstyle5(ev) {
         O_karl.className = "walkAnimation walk_" + (walksteps % 4);
     } else {
 
-        if (!O_brickWall.Onoff){
+        if (walksteps<=255){
             walksteps +=0;
         }else{
             walksteps = walksteps - 1;
