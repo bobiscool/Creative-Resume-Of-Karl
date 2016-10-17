@@ -47,7 +47,7 @@ function UPpreloaderDiv() {//加载完成后向上滑动 预加载页面 //这�
     });}
 }
 
-setTimeout(UPpreloaderDiv,1500);
+// setTimeout(UPpreloaderDiv,1500);
 
 function F_forstopWalking() {
     Walking(function(){clearInterval(timer2);hideKeynotice();});
@@ -64,10 +64,13 @@ function preloadimages(arr){
     var arr=(typeof arr!="object")? [arr] : arr;  //确保参数总是数组
     for (var i=0; i<arr.length; i++){
         newimages[i]=new Image();
+        newimages[i].index = i;
         newimages[i].src=arr[i];
         newimages[i].onload = function () {
 
-            console.log('o');
+           if(this.index==1){
+               UPpreloaderDiv;
+           }
 
         }
     }
