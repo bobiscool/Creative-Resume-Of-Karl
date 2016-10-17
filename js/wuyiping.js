@@ -74,7 +74,9 @@ O_HotBalon.style.top = '1100px';
 //O_Car1Imgsrc.src = '../img/dataDEMO/construction/Car.png';
 //记录当前 创口里面HEAD层真实的位置   用于适配 所有屏幕用的
 window.onresize = positionReset;  //添加 窗口改变时 改变人物位置
-
+setInterval(function(){
+    console.log(walksteps)
+},100);
 
 //     var KarlWalk  = new AnimationObjects({who:OKarl2,where:'',how:Walking}); //没卵用啊 ??
 // console.log(KarlWalk);
