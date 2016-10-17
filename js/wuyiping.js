@@ -46,7 +46,7 @@ var O_Guangbiao = document.getElementById('Guangbiao');
 var O_Tinnyplane = document.getElementById('Tinny-plane');
 var O_HotBalon = document.getElementById('HotBalon');
 var O_brickWall = document.getElementById('brickwall');
-fallAnimationIMG.src = newimages[0].src;
+
 var words = [
     '大家好 欢迎来到我的个人简历!',
     '这是我的个人技能 自我测评',
