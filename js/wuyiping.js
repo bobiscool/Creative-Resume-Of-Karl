@@ -373,14 +373,14 @@ function F_swimAnimation() { //游泳动画
     var i = 0;
     O_karl.style.marginBottom = '40px';
     O_karl.style.marginLeft = '-67px';
-    O_karl.style.backgroundImage= 'url('+newimages[2]+')';
-    O_karl.className = "swim2 swim2_" + i;
+    O_karl.style.backgroundImage= 'url('+newimages[2].src+')';
+    O_karl.className = "swim2_" + i;
      OT_karlswimAnimation = setInterval(function () {
         i++;
         if (i >= 39) {
             i = 0;
         }
-        O_karl.className = "swim2 swim2_" + i;
+        O_karl.className = "swim2_" + i;
     }, 50);
 
 }
