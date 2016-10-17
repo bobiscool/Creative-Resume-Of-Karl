@@ -17,12 +17,13 @@ n1.onload = function () {
     O_Laocar.src = n1.src;
 
     n2.src = './img/Pgrass.png';
-    n2.onload = function () {
-        O_Pgrass.src = n2.src;
-        preloadimages(arr);
-    }
-}
 
+}
+n2.onload = function () {
+    O_Pgrass.src = n2.src;
+
+}
+preloadimages(arr);
 
 function showPreloadDIVorIfitisIEjustdontletRun() {//不在IE运行
     "internet explorer" == browserName?$(preloaderDiv).addClass('IEFUCKER'):$(preloaderDiv).addClass('displayshow');
@@ -92,9 +93,6 @@ function preloadimages(arr){
             O_Laocar.style.right = 500-n*(500/arr.length)+'px';
             O_Laotext.innerHTML = '老司机已经加载了%'+Math.floor(n*100/arr.length);
 
-            if(this.index ==0){
-                fallAnimationIMG.src = newimages[0].src;
-            }
             if(n>=arr.length){
                 UPpreloaderDiv();
             }
