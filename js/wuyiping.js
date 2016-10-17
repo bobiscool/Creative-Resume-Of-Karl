@@ -325,8 +325,7 @@ function F_JumpInTheSea(Callback) {
             clearInterval(T_SwimSeaTimer);
         }
 
-        O_karl.style.backgroundImage=newimages[1].src;
-        O_karl.style.backgroundRepeat = 'none-repeat';
+
         O_karl.className = "swim_" + i;
         i++;
     }, 30);
@@ -346,6 +345,8 @@ function F_shuChangeback() {  //海平面向上
     positionKarl();
     O_karl.style.maxWidth = '160px';
     O_karl.style.marginBottom = "-10px";
+    O_karl.style.backgroundImage=newimages[1].src;
+    O_karl.style.backgroundRepeat = 'none-repeat';
     O_Sea.style.top= "90%";
 
     $(CaodiAndDadi).animate({'top': "-75%"}, 'slow', "easeOutExpo", function () {

@@ -146,8 +146,8 @@
                     <state relative-caret-position="249">
                       <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
                       <folding>
-                        <marker date="1476690607000" expanded="true" signature="17395:17459" ph="{...}" />
-                        <marker date="1476690607000" expanded="true" signature="17463:17535" ph="{...}" />
+                        <marker date="1476690880000" expanded="true" signature="17388:17452" ph="{...}" />
+                        <marker date="1476690880000" expanded="true" signature="17456:17528" ph="{...}" />
                       </folding>
                     </state>
                   </provider>
@@ -268,10 +268,10 @@
                     <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
                       <provider selected="true" editor-type-id="text-editor">
                         <state relative-caret-position="14658">
-                          <caret line="744" column="0" selection-start-line="744" selection-start-column="0" selection-end-line="744" selection-end-column="0" />
+                          <caret line="745" column="0" selection-start-line="745" selection-start-column="0" selection-end-line="745" selection-end-column="0" />
                           <folding>
-                            <marker date="1476690607000" expanded="true" signature="17395:17459" ph="{...}" />
-                            <marker date="1476690607000" expanded="true" signature="17463:17535" ph="{...}" />
+                            <marker date="1476690880000" expanded="true" signature="17388:17452" ph="{...}" />
+                            <marker date="1476690880000" expanded="true" signature="17456:17528" ph="{...}" />
                           </folding>
                         </state>
                       </provider>
@@ -304,11 +304,11 @@
               <file leaf-file-name="wuyiping.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="259">
-                      <caret line="329" column="30" selection-start-line="329" selection-start-column="30" selection-end-line="329" selection-end-column="30" />
+                    <state relative-caret-position="197">
+                      <caret line="348" column="50" selection-start-line="348" selection-start-column="50" selection-end-line="348" selection-end-column="50" />
                       <folding>
-                        <marker date="1476690607000" expanded="true" signature="17395:17459" ph="{...}" />
-                        <marker date="1476690607000" expanded="true" signature="17463:17535" ph="{...}" />
+                        <marker date="1476690880000" expanded="true" signature="17388:17452" ph="{...}" />
+                        <marker date="1476690880000" expanded="true" signature="17456:17528" ph="{...}" />
                       </folding>
                     </state>
                   </provider>
@@ -342,10 +342,10 @@
                 <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="178">
-                      <caret line="887" column="42" selection-start-line="887" selection-start-column="42" selection-end-line="887" selection-end-column="42" />
+                      <caret line="888" column="42" selection-start-line="888" selection-start-column="42" selection-end-line="888" selection-end-column="42" />
                       <folding>
-                        <marker date="1476690607000" expanded="true" signature="17395:17459" ph="{...}" />
-                        <marker date="1476690607000" expanded="true" signature="17463:17535" ph="{...}" />
+                        <marker date="1476690880000" expanded="true" signature="17388:17452" ph="{...}" />
+                        <marker date="1476690880000" expanded="true" signature="17456:17528" ph="{...}" />
                       </folding>
                     </state>
                   </provider>
@@ -580,12 +580,12 @@
       <workItem from="1473818952792" duration="63520000" />
       <workItem from="1475735922331" duration="1518000" />
       <workItem from="1475738933745" duration="122037000" />
-      <workItem from="1476200885170" duration="32539000" />
+      <workItem from="1476200885170" duration="32811000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="538106000" />
+    <option name="totallyTimeSpent" value="538378000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -598,7 +598,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15785764" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25783134" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20722891" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -996,17 +996,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-          <folding>
-            <marker date="1476690607000" expanded="true" signature="17395:17459" ph="{...}" />
-            <marker date="1476690607000" expanded="true" signature="17463:17535" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -1024,6 +1013,17 @@
             <element signature="n#div#1;n#div#14;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#15;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#16;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="348" column="50" selection-start-line="348" selection-start-column="50" selection-end-line="348" selection-end-column="50" />
+          <folding>
+            <marker date="1476690880000" expanded="true" signature="17388:17452" ph="{...}" />
+            <marker date="1476690880000" expanded="true" signature="17456:17528" ph="{...}" />
           </folding>
         </state>
       </provider>
