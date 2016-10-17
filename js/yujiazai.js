@@ -92,7 +92,7 @@ function preloadimages(arr){
             O_Laocar.style.right = 500-n*(500/arr.length)+'px';
             O_Laotext.innerHTML = '老司机已经加载了%'+Math.floor(n*100/arr.length);
 
-            if(newimages[i].index ==0){
+            if(this.index ==0){
                 fallAnimationIMG.src = newimages[0].src;
             }
             if(n>=arr.length){
