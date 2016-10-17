@@ -13,7 +13,7 @@ var OKarl2 = document.getElementById('Karl');//男主角
 var O_karl = document.getElementById('Karlvicent');//男主角
 var fallAnimation = document.getElementById('fallAnimation');//
 var fallAnimationIMG = document.getElementById('fallAnimationIMG');
-fallAnimationIMG.src = newimages[0].src;
+
 //人物掉落动画
 var Keynotice = document.getElementById('keybord');//按键提示
 var CaodiAndDadi = document.getElementById('layer-hen-3');//草地层
@@ -46,6 +46,7 @@ var O_Guangbiao = document.getElementById('Guangbiao');
 var O_Tinnyplane = document.getElementById('Tinny-plane');
 var O_HotBalon = document.getElementById('HotBalon');
 var O_brickWall = document.getElementById('brickwall');
+fallAnimationIMG.src = newimages[0].src;
 var words = [
     '大家好 欢迎来到我的个人简历!',
     '这是我的个人技能 自我测评',
