@@ -118,6 +118,13 @@ Oimg_Tinny.src = newimages[13].src;
 
 var Oimg_HotBalon = document.getElementById('HotBalon');
 Oimg_HotBalon.src = newimages[14].src;
+
+var Oimg_farer1 = document.getElementById('farer-mountain1');
+Oimg_farer1.src = newimages[15].src;
+
+var Oimg_farer2 = document.getElementById('farer-mountain2');
+Oimg_farer2.src = newimages[15].src;
+
 //     var KarlWalk  = new AnimationObjects({who:OKarl2,where:'',how:Walking}); //没卵用啊 ??
 // console.log(KarlWalk);
 
