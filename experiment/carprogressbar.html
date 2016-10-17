@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #progressOb {
+            width:500px;
+            height:25px;
+            background: #A97742;
+            border-radius: 5px;
+            position: absolute;
+            top:200px;
+        }
+        #progressIb {
+            width:0px;
+            height:25px;
+            position: absolute;
+            border-radius: 5px;
+            background-color: #2b2b2b;
+            opacity: 0.3;
+            -webkit-transition: width 0.5s, background 1.2s;
+            -moz-transition: width 0.5s, background 1.2s;
+            -ms-transition: width 0.5s ,background 1.2s;
+            -o-transition: width 0.5s, background 1.2s;
+            transition: width 0.5s ,background 1.2s;
+        }
+
+
+        #Laosiji {
+            position: absolute;
+            display: inline-block;
+            width: 500px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            font-size: 15px;
+            z-index: 10;
+            color: #f4f6f8;
+
+            -webkit-transition: opacity 0.5s,color 1.2s;
+            -moz-transition: opacity 0.5s,color 1.2s;
+            -ms-transition: opacity 0.5s,color 1.2s;
+            -o-transition: opacity 0.5s,color 1.2s;
+            transition: opacity 0.5s,color 1.2s;
+        }
+
+        #Laocar {
+            position: absolute;
+            top:-96px;
+            right:500px;
+            -webkit-transition: right 0.5s;
+            -moz-transition: right 0.5s;
+            -ms-transition: right 0.5s;
+            -o-transition: right 0.5s;
+            transition: right 0.5s;
+        }
+        
+
+        #Pgrass {
+            position: absolute;
+            top:-15px;
+            left:0;
+            z-index: 10;
+        }
+
+
+
+
+
+
+
+    </style>
+</head>
+<script>
+    window.onload = function(){
+
+        var progressIb = document.getElementById('progressIb');
+        var O_Laocar =  document.getElementById('Laocar');
+        var O_Laotext =  document.getElementById('Laosiji');
+        var n=0;
+        var timer = setInterval(function(){
+            n++;
+            progressIb.style.width = n*50+'px';
+            O_Laocar.style.right = 500-n*50+'px';
+            O_Laotext.innerHTML = '老司机已经加载了%'+n*10;
+
+            if(n>=10){
+                clearInterval(timer);
+            }
+
+        },1000)
+
+//        var timer2 =setInterval(function () {
+//            O_Laotext.style.opacity = 0;
+//            setTimeout(function () {
+//                O_Laotext.style.opacity = 1;
+//            },1000)
+//        },1500)
+    }
+
+</script>
+<body>
+<div id="progressOb">
+    <img id="Laocar" src="../img/laosiji.png">
+    <span id="Laosiji"></span>
+    <div id="progressIb"></div>
+<img id="Pgrass" src="../img/Pgrass.png">
+</div>
+
+</body>
+</html>
