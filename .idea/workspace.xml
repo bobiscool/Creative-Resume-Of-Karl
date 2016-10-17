@@ -24,12 +24,12 @@
     <favorites_list name="wuyipinginteractiveresume" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.26595744">
+    <splitter split-orientation="vertical" split-proportion="0.10507881">
       <split-first>
         <splitter split-orientation="horizontal" split-proportion="0.7092257">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+              <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/index.html">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="84">
@@ -76,12 +76,12 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="思路.md" pinned="false" current-in-tab="false">
+              <file leaf-file-name="思路.md" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/思路.md">
                   <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                     <state split_layout="SPLIT">
-                      <first_editor relative-caret-position="296">
-                        <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+                      <first_editor relative-caret-position="396">
+                        <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
                         <folding />
                       </first_editor>
                       <second_editor />
@@ -145,8 +145,8 @@
                     <state relative-caret-position="249">
                       <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
                       <folding>
-                        <marker date="1476690967000" expanded="true" signature="17446:17510" ph="{...}" />
-                        <marker date="1476690967000" expanded="true" signature="17514:17586" ph="{...}" />
+                        <marker date="1476692469000" expanded="true" signature="17435:17499" ph="{...}" />
+                        <marker date="1476692469000" expanded="true" signature="17503:17575" ph="{...}" />
                       </folding>
                     </state>
                   </provider>
@@ -188,11 +188,11 @@
                       </provider>
                     </entry>
                   </file>
-                  <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+                  <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/README.md">
                       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                         <state split_layout="SPLIT">
-                          <first_editor relative-caret-position="294">
+                          <first_editor relative-caret-position="291">
                             <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
                             <folding />
                           </first_editor>
@@ -231,7 +231,7 @@
                       </provider>
                     </entry>
                   </file>
-                  <file leaf-file-name="Karl's.css" pinned="false" current-in-tab="true">
+                  <file leaf-file-name="Karl's.css" pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/CSS/Karl's.css">
                       <provider selected="true" editor-type-id="text-editor">
                         <state relative-caret-position="142">
@@ -269,8 +269,8 @@
                         <state relative-caret-position="14658">
                           <caret line="747" column="0" selection-start-line="747" selection-start-column="0" selection-end-line="747" selection-end-column="0" />
                           <folding>
-                            <marker date="1476690967000" expanded="true" signature="17446:17510" ph="{...}" />
-                            <marker date="1476690967000" expanded="true" signature="17514:17586" ph="{...}" />
+                            <marker date="1476692469000" expanded="true" signature="17435:17499" ph="{...}" />
+                            <marker date="1476692469000" expanded="true" signature="17503:17575" ph="{...}" />
                           </folding>
                         </state>
                       </provider>
@@ -303,11 +303,11 @@
               <file leaf-file-name="wuyiping.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="37">
-                      <caret line="213" column="49" selection-start-line="213" selection-start-column="49" selection-end-line="213" selection-end-column="49" />
+                    <state relative-caret-position="982">
+                      <caret line="240" column="18" selection-start-line="240" selection-start-column="18" selection-end-line="240" selection-end-column="18" />
                       <folding>
-                        <marker date="1476690967000" expanded="true" signature="17446:17510" ph="{...}" />
-                        <marker date="1476690967000" expanded="true" signature="17514:17586" ph="{...}" />
+                        <marker date="1476692469000" expanded="true" signature="17435:17499" ph="{...}" />
+                        <marker date="1476692469000" expanded="true" signature="17503:17575" ph="{...}" />
                       </folding>
                     </state>
                   </provider>
@@ -326,7 +326,7 @@
               <file leaf-file-name="yujiazai.js" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/js/yujiazai.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="1554">
+                    <state relative-caret-position="1491">
                       <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
                       <folding />
                     </state>
@@ -343,8 +343,8 @@
                     <state relative-caret-position="178">
                       <caret line="890" column="42" selection-start-line="890" selection-start-column="42" selection-end-line="890" selection-end-column="42" />
                       <folding>
-                        <marker date="1476690967000" expanded="true" signature="17446:17510" ph="{...}" />
-                        <marker date="1476690967000" expanded="true" signature="17514:17586" ph="{...}" />
+                        <marker date="1476692469000" expanded="true" signature="17435:17499" ph="{...}" />
+                        <marker date="1476692469000" expanded="true" signature="17503:17575" ph="{...}" />
                       </folding>
                     </state>
                   </provider>
@@ -388,7 +388,6 @@
         <option value="$PROJECT_DIR$/experiment/Car.html" />
         <option value="$PROJECT_DIR$/experiment/CarDom.html" />
         <option value="$PROJECT_DIR$/experiment/Crane.html" />
-        <option value="$PROJECT_DIR$/思路.md" />
         <option value="$PROJECT_DIR$/experiment/test.html" />
         <option value="$PROJECT_DIR$/experiment/BigCar.html" />
         <option value="$PROJECT_DIR$/experiment/bigcar.less" />
@@ -399,6 +398,7 @@
         <option value="$PROJECT_DIR$/CSS/Karl's.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/yujiazai.js" />
+        <option value="$PROJECT_DIR$/思路.md" />
         <option value="$PROJECT_DIR$/js/wuyiping.js" />
       </list>
     </option>
@@ -579,12 +579,12 @@
       <workItem from="1473818952792" duration="63520000" />
       <workItem from="1475735922331" duration="1518000" />
       <workItem from="1475738933745" duration="122037000" />
-      <workItem from="1476200885170" duration="34051000" />
+      <workItem from="1476200885170" duration="34928000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="539618000" />
+    <option name="totallyTimeSpent" value="540495000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -846,17 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="294">
-            <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/experiment/Car.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -936,17 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/思路.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="296">
-            <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/experiment/CarDom.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-21">
@@ -969,29 +947,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/yujiazai.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1554">
+        <state relative-caret-position="1491">
           <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/Karl's.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="895" column="63" selection-start-line="895" selection-start-column="63" selection-end-line="895" selection-end-column="76" />
-          <folding>
-            <element signature="e#39309#39389#0" expanded="false" />
-            <element signature="e#39402#39618#0" expanded="false" />
-            <element signature="e#39627#39708#0" expanded="false" />
-            <element signature="e#39936#41213#0" expanded="false" />
-            <element signature="e#41215#42481#0" expanded="false" />
-            <element signature="e#42483#43789#0" expanded="false" />
-            <element signature="e#43791#45018#0" expanded="false" />
-            <element signature="e#45020#46307#0" expanded="false" />
-            <element signature="e#46309#47585#0" expanded="false" />
-            <element signature="e#47587#48903#0" expanded="false" />
-            <element signature="e#48905#50142#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1016,13 +974,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/Karl's.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="895" column="63" selection-start-line="895" selection-start-column="63" selection-end-line="895" selection-end-column="76" />
+          <folding>
+            <element signature="e#39309#39389#0" expanded="false" />
+            <element signature="e#39402#39618#0" expanded="false" />
+            <element signature="e#39627#39708#0" expanded="false" />
+            <element signature="e#39936#41213#0" expanded="false" />
+            <element signature="e#41215#42481#0" expanded="false" />
+            <element signature="e#42483#43789#0" expanded="false" />
+            <element signature="e#43791#45018#0" expanded="false" />
+            <element signature="e#45020#46307#0" expanded="false" />
+            <element signature="e#46309#47585#0" expanded="false" />
+            <element signature="e#47587#48903#0" expanded="false" />
+            <element signature="e#48905#50142#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="291">
+            <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/思路.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="396">
+            <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/wuyiping.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="213" column="49" selection-start-line="213" selection-start-column="49" selection-end-line="213" selection-end-column="49" />
+        <state relative-caret-position="982">
+          <caret line="240" column="18" selection-start-line="240" selection-start-column="18" selection-end-line="240" selection-end-column="18" />
           <folding>
-            <marker date="1476690967000" expanded="true" signature="17446:17510" ph="{...}" />
-            <marker date="1476690967000" expanded="true" signature="17514:17586" ph="{...}" />
+            <marker date="1476692469000" expanded="true" signature="17435:17499" ph="{...}" />
+            <marker date="1476692469000" expanded="true" signature="17503:17575" ph="{...}" />
           </folding>
         </state>
       </provider>

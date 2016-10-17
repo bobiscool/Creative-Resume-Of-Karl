@@ -347,7 +347,7 @@ function F_shuChangeback() {  //海平面向上
     positionKarl();
     O_karl.style.maxWidth = '160px';
     O_karl.style.marginBottom = "-10px";
-    O_karl.style.backgroundImage=newimages[1].src;
+    O_karl.style.backgroundImage=url(newimages[1].src);
     O_karl.style.backgroundRepeat = 'none-repeat';
     O_Sea.style.top= "90%";
 
