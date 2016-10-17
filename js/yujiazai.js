@@ -88,9 +88,9 @@ function preloadimages(arr){
         newimages[i].onload = function () {
            n++;
             console.log(n);
-            progressIb.style.width = n*50+'px';
-            O_Laocar.style.right = 500-n*50+'px';
-            O_Laotext.innerHTML = '老司机已经加载了%'+n*10;
+            progressIb.style.width = n*(500/arr.length)+'px';
+            O_Laocar.style.right = 500-n*(500/arr.length)+'px';
+            O_Laotext.innerHTML = '老司机已经加载了%'+Math.floor(n*100/arr.length);
 
             if(n>=arr.length){
                 UPpreloaderDiv();
