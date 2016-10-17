@@ -918,7 +918,7 @@ body {
 
 
 /*游泳动画*/
-.swim2 { background: url("../img/swim2.png") no-repeat !important;}
+.swim2 { background: url("../img/swim2.png") no-repeat ;}
 .swim2_0 { width: 160px; height: 153px; background-position: 0 0; }
 .swim2_1 { width: 160px; height: 153px; background-position: 0 -154px; }
 .swim2_2 { width: 160px; height: 153px; background-position: 0 -308px; }

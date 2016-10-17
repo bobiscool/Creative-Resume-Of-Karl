@@ -55,7 +55,7 @@ function F_forstopWalking() {
 
 
 
-var arr = ['../img/fall.png','../img/jumpinthesea.png'];
+var arr = ['../img/fall.png','../img/jumpinthesea.png','../img/swim2.png'];
 
 preloadimages(arr);
 
