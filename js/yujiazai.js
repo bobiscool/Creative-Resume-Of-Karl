@@ -9,8 +9,19 @@ var progressIb = document.getElementById('progressIb');
 var O_Laocar =  document.getElementById('Laocar');
 var O_Laotext =  document.getElementById('Laosiji');
 var O_Pgrass = document.getElementById('Pgrass');
-O_Laocar.src='./img/laosiji.png';
-O_Pgrass.src='./img/Pgrass.png';
+var arr = ['../img/fall.png','../img/jumpinthesea.png','../img/swim2.png','../img/walk.png',"img/far-forest.png",'../img/ground.png','../img/grass.png','../img/tree-1.png','../img/tree-2.png','../img/tree-3.png','../img/title.png','img/mountain.png','img/mountain2.png',"./img/Tinyplane.png","img/ballon.png","img/mountain3.png","img/wood%20board.png","./img/dataDEMO/windomill.png"];
+var n1 = new Image;
+var n2 = new Image;
+n1.src = './img/laosiji.png';
+n1.onload = function () {
+    O_Laocar.src = n1.src;
+
+    n2.src = './img/Pgrass.png';
+    n2.onload() = function () {
+        O_Pgrass.src = n2.src;
+        preloadimages(arr);
+    }
+}
 
 
 function showPreloadDIVorIfitisIEjustdontletRun() {//不在IE运行
@@ -63,9 +74,9 @@ function F_forstopWalking() {
 
 
 
-var arr = ['../img/fall.png','../img/jumpinthesea.png','../img/swim2.png','../img/walk.png',"img/far-forest.png",'../img/ground.png','../img/grass.png','../img/tree-1.png','../img/tree-2.png','../img/tree-3.png','../img/title.png','img/mountain.png','img/mountain2.png',"./img/Tinyplane.png","img/ballon.png","img/mountain3.png","img/wood%20board.png","./img/dataDEMO/windomill.png"];
 
-preloadimages(arr);
+
+
 
 function preloadimages(arr){
     var n=0;
