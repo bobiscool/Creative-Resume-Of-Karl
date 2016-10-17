@@ -47,7 +47,7 @@ function UPpreloaderDiv() {//加载完成后向上滑动 预加载页面 //这�
     });}
 }
 
-// setTimeout(UPpreloaderDiv,1500);
+setTimeout(UPpreloaderDiv,1500);
 
 function F_forstopWalking() {
     Walking(function(){clearInterval(timer2);hideKeynotice();});
@@ -67,7 +67,7 @@ function preloadimages(arr){
         newimages[i].src=arr[i];
         newimages[i].onload = function () {
             if(i==1){
-                UPpreloaderDiv;
+                console.log(i);
             }
 
         }
