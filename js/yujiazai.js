@@ -8,6 +8,10 @@ var newimages=[];
 var progressIb = document.getElementById('progressIb');
 var O_Laocar =  document.getElementById('Laocar');
 var O_Laotext =  document.getElementById('Laosiji');
+var O_Pgrass = document.getElementById('Pgrass');
+O_Laocar.src='./img/laosiji.png';
+O_Pgrass.src='./img/Pgrass.png';
+
 
 function showPreloadDIVorIfitisIEjustdontletRun() {//不在IE运行
     "internet explorer" == browserName?$(preloaderDiv).addClass('IEFUCKER'):$(preloaderDiv).addClass('displayshow');
