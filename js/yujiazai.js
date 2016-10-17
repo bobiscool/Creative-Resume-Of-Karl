@@ -5,6 +5,10 @@ var preloaderDiv = document.getElementById('preloader');
 var timer2 =null; // 设置一个全局的时钟
 var newimages=[];
 //console.log(preloaderDiv);
+var progressIb = document.getElementById('progressIb');
+var O_Laocar =  document.getElementById('Laocar');
+var O_Laotext =  document.getElementById('Laosiji');
+
 function showPreloadDIVorIfitisIEjustdontletRun() {//不在IE运行
     "internet explorer" == browserName?$(preloaderDiv).addClass('IEFUCKER'):$(preloaderDiv).addClass('displayshow');
 }
@@ -69,6 +73,10 @@ function preloadimages(arr){
         newimages[i].onload = function () {
            n++;
             console.log(n);
+            progressIb.style.width = n*50+'px';
+            O_Laocar.style.right = 500-n*50+'px';
+            O_Laotext.innerHTML = '老司机已经加载了%'+n*10;
+
             if(n>=arr.length){
                 UPpreloaderDiv();
             }
