@@ -60,19 +60,17 @@ var arr = ['../img/fall.png','../img/jumpinthesea.png','../img/swim2.png','../im
 preloadimages(arr);
 
 function preloadimages(arr){
-
+    var n=0;
     var arr=(typeof arr!="object")? [arr] : arr;  //确保参数总是数组
     for (var i=0; i<arr.length; i++){
         newimages[i]=new Image();
         newimages[i].index = i;
         newimages[i].src=arr[i];
         newimages[i].onload = function () {
-
-            if (this.index == 3){
-                console.log(1);
+           n++;
+            if(n>=arr.length){
                 UPpreloaderDiv();
             }
-
         }
     }
 }
