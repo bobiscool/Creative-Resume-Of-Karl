@@ -66,9 +66,8 @@ function preloadimages(arr){
         newimages[i]=new Image();
         newimages[i].src=arr[i];
         newimages[i].onload = function () {
-            if(i==1){
-                console.log(i);
-            }
+
+            console.log('o');
 
         }
     }
