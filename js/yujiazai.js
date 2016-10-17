@@ -68,7 +68,9 @@ function preloadimages(arr){
         newimages[i].src=arr[i];
         newimages[i].onload = function () {
 
-          console.log(this.index);
+            if (this.index == 1){
+                console.log(1);
+            }
 
         }
     }
