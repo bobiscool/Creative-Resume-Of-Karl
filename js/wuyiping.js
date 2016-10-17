@@ -325,7 +325,7 @@ function F_JumpInTheSea(Callback) {
             clearInterval(T_SwimSeaTimer);
         }
 
-        O_karl.style.backgroundImage = newimages[1].src;
+        O_karl.style.backgroundImage.url= newimages[1].src;
         O_karl.className = "swim_" + i;
         i++;
     }, 30);
