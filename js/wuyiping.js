@@ -373,6 +373,8 @@ function F_swimAnimation() { //游泳动画
     var i = 0;
     O_karl.style.marginBottom = '40px';
     O_karl.style.marginLeft = '-67px';
+    O_karl.style.backgroundImage= ' ';
+    O_karl.style.backgroundRepeat = 'none-repeat';
     O_karl.className = "swim2 swim2_" + i;
      OT_karlswimAnimation = setInterval(function () {
         i++;
