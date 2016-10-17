@@ -3,6 +3,7 @@
  */
 var preloaderDiv = document.getElementById('preloader');
 var timer2 =null; // 设置一个全局的时钟
+var newimages=[];
 //console.log(preloaderDiv);
 function showPreloadDIVorIfitisIEjustdontletRun() {//不在IE运行
     "internet explorer" == browserName?$(preloaderDiv).addClass('IEFUCKER'):$(preloaderDiv).addClass('displayshow');
@@ -59,13 +60,13 @@ var arr = ['../img/fall.png','../img/jumpinthesea.png'];
 preloadimages(arr);
 
 function preloadimages(arr){
-    var newimages=[];
+
     var arr=(typeof arr!="object")? [arr] : arr;  //确保参数总是数组
     for (var i=0; i<arr.length; i++){
         newimages[i]=new Image();
         newimages[i].src=arr[i];
         newimages[i].onload = function () {
-            console.log('加载完'+this.src)
+
         }
     }
 }

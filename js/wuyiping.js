@@ -12,7 +12,9 @@ var HeadDiv = document.getElementById('Head');// 标题
 var OKarl2 = document.getElementById('Karl');//男主角
 var O_karl = document.getElementById('Karlvicent');//男主角
 var fallAnimation = document.getElementById('fallAnimation');//
-var fallAnimationIMG = document.getElementById('fallAnimationIMG');//人物掉落动画
+var fallAnimationIMG = document.getElementById('fallAnimationIMG');
+fallAnimationIMG.src = newimages[i].src;
+//人物掉落动画
 var Keynotice = document.getElementById('keybord');//按键提示
 var CaodiAndDadi = document.getElementById('layer-hen-3');//草地层
 
@@ -323,7 +325,8 @@ function F_JumpInTheSea(Callback) {
             clearInterval(T_SwimSeaTimer);
         }
 
-        O_karl.className = "jumpToSeaAnimation swim_" + i;
+        O_karl.style.backgroundImage = newimages[1].src;
+        O_karl.className = "swim_" + i;
         i++;
     }, 30);
 
