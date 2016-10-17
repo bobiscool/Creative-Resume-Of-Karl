@@ -68,7 +68,7 @@ function preloadimages(arr){
         newimages[i].src=arr[i];
         newimages[i].onload = function () {
 
-            if (this.index == 1){
+            if (this.index == 3){
                 console.log(1);
                 UPpreloaderDiv();
             }
