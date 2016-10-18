@@ -67,11 +67,7 @@ O_csky5.Onoff = false;
 var n = 1;
 // $('#stationery').hide();
 
-O_Tinnyplane.style.left = '6100px';
-O_Tinnyplane.style.top = '1000px';
 
-O_HotBalon.style.left = '6100px';
-O_HotBalon.style.top = '1100px';
 //O_Car1Imgsrc.src = '../img/dataDEMO/construction/Car.png';
 //记录当前 创口里面HEAD层真实的位置   用于适配 所有屏幕用的
 window.onresize = positionReset;  //添加 窗口改变时 改变人物位置
@@ -135,6 +131,14 @@ var Aimg_mill = Oimg_plants.getElementsByTagName('img');
 for ( i = 0;i<Aimg_mill.length;i++){
     Aimg_mill[i].style.backgroundImage = 'url('+newimages[17].src+')';
 }
+
+
+
+O_Tinnyplane.style.left = '6100px';
+O_Tinnyplane.style.top = '1000px';
+
+O_HotBalon.style.left = '6100px';
+O_HotBalon.style.top = '1100px';
 //     var KarlWalk  = new AnimationObjects({who:OKarl2,where:'',how:Walking}); //没卵用啊 ??
 // console.log(KarlWalk);
 
