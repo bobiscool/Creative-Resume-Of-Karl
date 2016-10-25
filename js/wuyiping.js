@@ -545,11 +545,13 @@ function swimTOwalk(){
                  //背景声音响起
                  //火箭起飞
                     $(O_karl).animate({'bottom':'100px'},100,'easeOutCirc');
+                    O_karl.style.backgroundImage= 'url('+newimages[18].src+')';
                     clearInterval(OT_rocketTimer1);
                     var i = 0;
                     var O_karlTimer = setInterval(function(){
                         i++;
                         if(i<=19){
+
                             O_karl.className = 'gotorocket gotorocket_'+i;
                         }else {
                             clearInterval(O_karlTimer);
