@@ -46,6 +46,7 @@ var O_Guangbiao = document.getElementById('Guangbiao');
 var O_Tinnyplane = document.getElementById('Tinny-plane');
 var O_HotBalon = document.getElementById('HotBalon');
 var O_brickWall = document.getElementById('brickwall');
+var O_Tv = document.getElementById('bigTvArea');
 
 var words = [
     '大家好 欢迎来到我的个人简历!',
@@ -842,6 +843,10 @@ setTimeout(function () {
         O_Sea.style.top = O_Sea.offsetTop+20+'px';
         O_DaF.style.top = O_DaF.offsetTop+20+'px';
         O_DaW.style.top = O_DaW.offsetTop+20+'px';
+        O_brickWall.style.top = O_brickWall.offsetTop+20+'px';
+        O_Tv.style.top = O_Tv.offsetTop+20+'px';
+        Oimg_Tinny.style.display = "none";
+        O_HotBalon.style.display = "none";
         if($(O_rocket).offset().top-104 <=$('#sky5').offset().top){
             if(!O_csky5.Onoff) {
                 $('#sky5').vidbg({
@@ -856,7 +861,10 @@ setTimeout(function () {
                 O_csky5.Onoff = true;
             }
         }
-        if($(O_rocket).offset().top-74 <=$('#sky5').offset().top){
+        if($('#sky5').offset().top+O_csky5.offsetHeight >= window.innerHeight){
+            /**
+             * 设置位置的地方
+             */
             clearInterval(O_sky.timer)
         }
     },20);

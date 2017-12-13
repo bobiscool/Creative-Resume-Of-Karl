@@ -1,0 +1,14 @@
+{
+  "name": "creative-resume",
+  "version": "",
+  "description": "![](1.png)",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "jquery": "^3.2.1",
+    "jquery-ui": "github:components/jqueryui#1.11.4"
+  },
+  "devDependencies": {
+    "gulp-uglify": "^3.0.0"
+  }
+}

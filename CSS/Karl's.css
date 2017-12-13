@@ -1297,6 +1297,11 @@ body {
     height:1080px;
 }
 
+#sky6 {
+    background-color: #080707;
+    height:1080px;
+}
+
 
 #clouds1 {
     position: absolute;
@@ -2248,7 +2253,7 @@ body {
 #building-B2 {
     position: absolute;;
     left: 0;
-    bottom: 600px;
+    bottom: 1000px;
     z-index: 85;
 }
 
