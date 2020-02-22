@@ -5,7 +5,7 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
-    "jquery": "^3.2.1",
+    "jquery": "^3.4.0",
     "jquery-ui": "github:components/jqueryui#1.11.4"
   },
   "devDependencies": {
