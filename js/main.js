@@ -850,7 +850,8 @@ setTimeout(function () {
         if($(O_rocket).offset().top-104 <=$('#sky5').offset().top){
             if(!O_csky5.Onoff) {
                 $('#sky5').vidbg({
-                    'mp4': './img/earth.mp4',
+                    // 'mp4': './img/earth.mp4',
+                    'mp4': 'https://dl3.pushbulletusercontent.com/R0CC9uXc0VmBJoKtCFHrVvTH6XJOVBEl/earth.mp4.mp4',
                     'webm': './img/earth.webm',
                 }, {
                     // Options
