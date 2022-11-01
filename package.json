@@ -3,7 +3,7 @@
   "version": "",
   "description": "![](1.png)",
   "dependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "jquery": "^3.2.1",
     "jquery-ui": "github:components/jqueryui#1.11.4"
